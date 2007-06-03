@@ -13,4 +13,8 @@ public abstract class PersistenceService {
     public static SessionStrategyBuilder usingHibernate() {
         return new PersistenceServiceBuilderImpl(new PersistenceModule(PersistenceModule.PersistenceFlavor.HIBERNATE));
     }
+
+    public static SessionStrategyBuilder usingJpa() {
+        return new PersistenceServiceBuilderImpl(new PersistenceModule(PersistenceModule.PersistenceFlavor.JPA));
+    }
 }
