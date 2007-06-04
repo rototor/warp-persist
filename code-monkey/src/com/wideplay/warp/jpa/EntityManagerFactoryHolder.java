@@ -38,7 +38,6 @@ class EntityManagerFactoryHolder {
     }
 
     static EntityManagerFactory getCurrentEntityManagerFactory() {
-        System.out.println("session factory is: " + singletonEmFactoryHolder);
         return singletonEmFactoryHolder.getEntityManagerFactory();
     }
 

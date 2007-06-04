@@ -8,6 +8,7 @@ import com.google.inject.Injector;
 import com.google.inject.Guice;
 import com.google.inject.AbstractModule;
 import com.wideplay.warp.hibernate.TestEntity;
+import com.wideplay.warp.persist.dao.TestAccessor;
 import com.wideplay.codemonkey.web.startup.Initializer;
 
 /**
@@ -21,7 +22,9 @@ public class EdslBuilderTest {
     @Test public void testEdslLanguage() {
         PersistenceService.usingHibernate().buildModule();
 
-        PersistenceService.usingHibernate().across(UnitOfWork.REQUEST).buildModule();
+        PersistenceService.usingHibernate().across(UnitOfWork.REQUEST)
+                .addAccessor(TestAccessor.class)
+                .buildModule();
 
         PersistenceService.usingHibernate().across(UnitOfWork.TRANSACTION).forAll(Matchers.any()).buildModule();
     }

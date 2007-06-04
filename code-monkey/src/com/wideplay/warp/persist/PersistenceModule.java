@@ -1,12 +1,15 @@
 package com.wideplay.warp.persist;
 
 import com.google.inject.AbstractModule;
+import com.google.inject.cglib.proxy.Proxy;
 import com.google.inject.matcher.Matcher;
 import com.google.inject.matcher.Matchers;
-import com.wideplay.warp.hibernate.*;
-import org.apache.log4j.Logger;
-import org.hibernate.cfg.Configuration;
+import com.wideplay.warp.hibernate.HibernateBindingSupport;
+import com.wideplay.warp.persist.dao.Finder;
 import org.aopalliance.intercept.MethodInterceptor;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 /**
  * Created with IntelliJ IDEA.
@@ -17,13 +20,13 @@ import org.aopalliance.intercept.MethodInterceptor;
  */
 class PersistenceModule extends AbstractModule {
 
-    private static final Logger log = Logger.getLogger(PersistenceModule.class);
-
     private final PersistenceFlavor flavor;
+
     private UnitOfWork unitOfWork;
     private TransactionStrategy transactionStrategy;
     private Matcher<? super Class<?>> classMatcher;
 
+    private final Set<Class<?>> accessors = new LinkedHashSet<Class<?>>();
 
     PersistenceModule(PersistenceFlavor flavor) {
         this.flavor = flavor;
@@ -36,23 +39,44 @@ class PersistenceModule extends AbstractModule {
 
     protected void configure() {
         MethodInterceptor txnInterceptor = null;
+        MethodInterceptor finderInterceptor = null;
         switch (flavor) {
             case HIBERNATE:
                 HibernateBindingSupport.addBindings(binder());
                 txnInterceptor = HibernateBindingSupport.getInterceptor(transactionStrategy);
+                finderInterceptor = HibernateBindingSupport.getFinderInterceptor();
                 break;
             case JPA:
+                super.addError("JPA support is not available in this release");
         }
 
         //bind the chosen txn interceptor
         bindInterceptor(classMatcher, Matchers.annotatedWith(Transactional.class),
                 txnInterceptor);
+
+        //bind dynamic finders
+        bindInterceptor(Matchers.any(), Matchers.annotatedWith(Finder.class), finderInterceptor);
+
+        //create & bind dynamic accessors
+        bindDynamicAccessors(finderInterceptor);
+    }
+    
+    @SuppressWarnings("unchecked")
+    private void bindDynamicAccessors(MethodInterceptor finderInterceptor) {
+        for (Class accessor : accessors) {
+            bind(accessor).toInstance(Proxy.newProxyInstance(accessor.getClassLoader(),
+                    new Class<?>[] { accessor }, new AopAllianceAdapter(finderInterceptor)));
+        }
     }
 
     static enum PersistenceFlavor { HIBERNATE, JPA }
 
 
-    //builder config hooks
+    //builder config hooks  
+    void addAccessor(Class<?> daoInterface) {
+        accessors.add(daoInterface);
+    }
+
     void setUnitOfWork(UnitOfWork unitOfWork) {
         this.unitOfWork = unitOfWork;
     }

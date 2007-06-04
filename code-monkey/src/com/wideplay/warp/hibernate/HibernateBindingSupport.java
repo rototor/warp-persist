@@ -36,4 +36,8 @@ public class HibernateBindingSupport {
         
         return null;
     }
+
+    public static MethodInterceptor getFinderInterceptor() {
+        return new HibernateFinderInterceptor();
+    }
 }

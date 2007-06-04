@@ -13,4 +13,6 @@ public interface TransactionStrategyBuilder extends PersistenceModuleBuilder {
     TransactionStrategyBuilder transactedWith(TransactionStrategy transactionStrategy);
 
     PersistenceModuleBuilder forAll(Matcher<? super Class<?>> classMatcher);
+
+    TransactionStrategyBuilder addAccessor(Class<?> daoInterface);
 }

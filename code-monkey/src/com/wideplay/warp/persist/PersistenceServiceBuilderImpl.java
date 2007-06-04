@@ -39,6 +39,13 @@ class PersistenceServiceBuilderImpl implements SessionStrategyBuilder, Persisten
         return this;
     }
 
+
+    public TransactionStrategyBuilder addAccessor(Class<?> daoInterface) {
+        persistenceModule.addAccessor(daoInterface);
+
+        return this;
+    }
+
     public PersistenceModuleBuilder forAll(Matcher<? super Class<?>> classMatcher) {
         persistenceModule.setClassMatcher(classMatcher);
 

@@ -38,7 +38,6 @@ class SessionFactoryHolder {
     }
 
     static SessionFactory getCurrentSessionFactory() {
-        System.out.println("session factory is: " + singletonSessionFactoryHolder);
         return singletonSessionFactoryHolder.getSessionFactory();
     }
 
