@@ -1,5 +1,8 @@
 import com.google.inject.Guice;
 import com.google.inject.Inject;
+import com.google.inject.AbstractModule;
+import com.google.inject.Provider;
+import org.testng.annotations.Test;
 
 /**
  * Created with IntelliJ IDEA.
@@ -9,8 +12,29 @@ import com.google.inject.Inject;
  */
 public class GuiceTest {
     @Inject private GuiceTest test;
+    private String value;
 
-    public GuiceTest() { }
+    public GuiceTest() {}
+
+    @Test public final void testProvider() {
+        assert null != Guice.createInjector(new AbstractModule() {
+            protected void configure() {
+                bind(GuiceTest.class).toProvider(GuiceTestProvider.class);
+            }
+        }).getInstance(GuiceTest.class).value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
+    }
+
+    public static class GuiceTestProvider implements Provider<GuiceTest> {
+        @Inject GuiceTest test;
+        public GuiceTest get() {
+            test.setValue("other");
+            return test;
+        }
+    }
 
     public static void main(String...args) {
         Guice.createInjector().getInstance(GuiceTest.class);

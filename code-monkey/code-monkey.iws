@@ -17,24 +17,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/wideplay/warp/hibernate/HibernateBindingSupport.java" afterPath="$PROJECT_DIR$/src/com/wideplay/warp/hibernate/HibernateBindingSupport.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/wideplay/warp/persist/AopAllianceAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/warp-persist.jar" afterPath="$PROJECT_DIR$/dist/warp-persist.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/wideplay/warp/persist/EdslBuilderTest.java" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/persist/EdslBuilderTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/persist/dao" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/hibernate/HibernateTestEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/wideplay/warp/persist/dao/DynamicFinderTest.java" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/persist/dao/DynamicFinderTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code-monkey.iml" afterPath="$PROJECT_DIR$/code-monkey.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code-monkey.iws" afterPath="$PROJECT_DIR$/code-monkey.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/wideplay/warp/persist/EdslBuilderTest.java" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/persist/EdslBuilderTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/wideplay/warp/persist/dao/TestAccessor.java" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/persist/dao/TestAccessor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/META-INF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/wideplay/warp/hibernate/SessionProvisionTest.java" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/hibernate/SessionProvisionTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/wideplay/warp/persist/PersistenceModule.java" afterPath="$PROJECT_DIR$/src/com/wideplay/warp/persist/PersistenceModule.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/wideplay/warp/jpa/EntityManagerFactoryHolder.java" afterPath="$PROJECT_DIR$/src/com/wideplay/warp/jpa/EntityManagerFactoryHolder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/wideplay/warp/hibernate/SessionFactoryHolder.java" afterPath="$PROJECT_DIR$/src/com/wideplay/warp/hibernate/SessionFactoryHolder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/persist/dao/TestAccessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/wideplay/warp/persist/TransactionStrategyBuilder.java" afterPath="$PROJECT_DIR$/src/com/wideplay/warp/persist/TransactionStrategyBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/persist/dao/DynamicFinderTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/wideplay/warp/persist/dao/Finder.java" afterPath="$PROJECT_DIR$/src/com/wideplay/warp/persist/dao/Finder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/wideplay/warp/hibernate/TestEntity.java" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/hibernate/TestEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/antlr-2.7.5h3.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code-monkey.iml" afterPath="$PROJECT_DIR$/code-monkey.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/wideplay/warp/persist/PersistenceServiceBuilderImpl.java" afterPath="$PROJECT_DIR$/src/com/wideplay/warp/persist/PersistenceServiceBuilderImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/wideplay/warp/hibernate/HibernateFinderInterceptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/wideplay/warp/jpa/JpaPersistenceService.java" afterPath="$PROJECT_DIR$/src/com/wideplay/warp/jpa/JpaPersistenceService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/wideplay/warp/hibernate/ManualLocalTransactionsTest.java" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/hibernate/ManualLocalTransactionsTest.java" />
+      <change type="DELETED" beforePath="C:\workspace\warp-persist\test\com\wideplay\warp\hibernate\TestEntity.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/jpa/JpaTestEntity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/jpa" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/wideplay/warp/hibernate/SessionFactoryProvisionTest.java" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/hibernate/SessionFactoryProvisionTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/META-INF/persistence.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/GuiceTest.java" afterPath="$PROJECT_DIR$/test/GuiceTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/jpa/EntityManagerFactoryProvisionTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/wideplay/warp/jpa/JtaLocalTxnInterceptor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/wideplay/warp/hibernate/SessionFactoryDuplicationAwareTest.java" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/hibernate/SessionFactoryDuplicationAwareTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/wideplay/warp/hibernate/ManagedLocalTransactionsTest.java" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/hibernate/ManagedLocalTransactionsTest.java" />
     </list>
   </component>
   <component name="ChangeListSynchronizer" />
@@ -160,7 +164,50 @@
       </PATH>
     </subPane>
   </component>
-  <component name="FileEditorManager" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="EntityManagerFactoryProvisionTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/wideplay/warp/jpa/EntityManagerFactoryProvisionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="0" selection-start="1911" selection-end="1911" vertical-scroll-proportion="1.1433756">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersistenceModule.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/persist/PersistenceModule.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="22" selection-start="1806" selection-end="1806" vertical-scroll-proportion="0.48233217">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JpaPersistenceService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/jpa/JpaPersistenceService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="157" selection-end="157" vertical-scroll-proportion="0.17844523">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="persistence.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/META-INF/persistence.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="66" selection-start="602" selection-end="602" vertical-scroll-proportion="0.3303887">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
@@ -272,7 +319,7 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:L:\code-monkey" />
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -286,18 +333,282 @@
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:L:\code-monkey" />
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:L:\code-monkey\src" />
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\test" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="code-monkey.ipr" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="code-monkey" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\test" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\test\META-INF" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="code-monkey.ipr" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="code-monkey" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\test" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\test\com\wideplay" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\test\com\wideplay\warp" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\test\com\wideplay\warp\persist" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="code-monkey.ipr" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="code-monkey" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\test" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\test\com\wideplay" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\test\com\wideplay\warp" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\test\com\wideplay\warp\jpa" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="code-monkey.ipr" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="code-monkey" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\test" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\test\com\wideplay" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\test\com\wideplay\warp" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\test\com\wideplay\warp\hibernate" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="code-monkey.ipr" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="code-monkey" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\test" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\test\com\wideplay" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="code-monkey.ipr" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="code-monkey" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="code-monkey.ipr" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="code-monkey" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\src\com\wideplay" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\src\com\wideplay\warp" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\src\com\wideplay\warp\persist" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="code-monkey.ipr" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="code-monkey" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\src\com\wideplay" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\src\com\wideplay\warp" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\src\com\wideplay\warp\jpa" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="code-monkey.ipr" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="code-monkey" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\src\com\wideplay" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\src\com\wideplay\warp" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\src\com\wideplay\warp\hibernate" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="code-monkey.ipr" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="code-monkey" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\src\com\wideplay" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
     </subPane>
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
+    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="0.16666667" version="1" splitterProportion="0.5">
@@ -307,7 +618,7 @@
       <showLibraryContents />
       <hideEmptyPackages />
       <abbreviatePackageNames />
-      <showStructure Favorites="false" PackagesPane="false" Scope="false" ProjectPane="false" />
+      <showStructure Scope="false" ProjectPane="false" PackagesPane="false" Favorites="false" />
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType ProjectPane="true" />
@@ -332,8 +643,8 @@
       <recent name="com.wideplay.warp.persist.PersistenceService" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.wideplay.warp.persist.dao" />
       <recent name="com.wideplay.warp.jpa" />
+      <recent name="com.wideplay.warp.persist.dao" />
       <recent name="com.wideplay.warp.hibernate" />
       <recent name="com.wideplay.guice.persist" />
       <recent name="com.wideplay.codemonkey.persist" />
@@ -342,11 +653,11 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.wideplay.warp.jpa" />
       <recent name="com.wideplay.warp.persist" />
       <recent name="com.wideplay.warp.persist.dao" />
       <recent name="com.wideplay.warp" />
       <recent name="com.wideplay.guice.persist.hibernate" />
-      <recent name="com.wideplay.guice.persist" />
     </key>
   </component>
   <component name="Regex">
@@ -361,31 +672,7 @@
     <option name="showLabels" value="true" />
   </component>
   <component name="RestoreUpdateTree" />
-  <component name="RunManager" selected="TestNG.DynamicFinderTest">
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local">
-      <option name="WORKING_DIRECTORY" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="8080" />
-      <option name="LOCAL" value="true" />
-      <option name="OPEN_IN_BROWSER" value="true" />
-      <option name="OPEN_IN_BROWSER_URL" value="/" />
-      <option name="COMMON_VM_ARGUMENTS" value="" />
-      <J2EE_MODULE DEPLOYMENT_SOURCE_NAME="exploded">
-        <option name="CONTEXT_PATH" value="/" />
-        <option name="MODULE_NAME" value="code-monkey" />
-        <option name="DEPLOY" value="false" />
-      </J2EE_MODULE>
-      <option name="DEPLOY_TOMCAT_MANAGER" value="false" />
-      <option name="BASE_DIRECTORY_NAME" value="" />
-      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
-    </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
+  <component name="RunManager" selected="TestNG.EntityManagerFactoryProvisionTest">
     <configuration default="true" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -409,6 +696,13 @@
       <method>
         <option name="Make" value="true" />
       </method>
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <module name="" />
@@ -441,6 +735,23 @@
         <option name="Make" value="true" />
       </method>
     </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local">
+      <option name="WORKING_DIRECTORY" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="8080" />
+      <option name="LOCAL" value="true" />
+      <option name="OPEN_IN_BROWSER" value="true" />
+      <option name="OPEN_IN_BROWSER_URL" value="/" />
+      <option name="COMMON_VM_ARGUMENTS" value="" />
+      <J2EE_MODULE DEPLOYMENT_SOURCE_NAME="exploded">
+        <option name="CONTEXT_PATH" value="/" />
+        <option name="MODULE_NAME" value="code-monkey" />
+        <option name="DEPLOY" value="false" />
+      </J2EE_MODULE>
+      <option name="DEPLOY_TOMCAT_MANAGER" value="false" />
+      <option name="BASE_DIRECTORY_NAME" value="" />
+      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application" enabled="false" merge="false">
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
@@ -471,6 +782,84 @@
       <option name="ADDITIONAL_CLASS_PATH" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="wholeProject" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Make" value="true" />
+      </method>
+    </configuration>
+    <configuration default="false" name="DynamicFinderTest" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
+      <module name="code-monkey" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.wideplay.warp.persist.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.wideplay.warp.persist.dao.DynamicFinderTest" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ADDITIONAL_CLASS_PATH" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Make" value="true" />
+      </method>
+    </configuration>
+    <configuration default="false" name="GuiceTest" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
+      <module name="code-monkey" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="GuiceTest" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="ADDITIONAL_CLASS_PATH" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Make" value="true" />
+      </method>
+    </configuration>
+    <configuration default="false" name="EntityManagerFactoryProvisionTest" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
+      <module name="code-monkey" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.wideplay.warp.jpa" />
+      <option name="MAIN_CLASS_NAME" value="com.wideplay.warp.jpa.EntityManagerFactoryProvisionTest" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/classes/test/code-monkey" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="ADDITIONAL_CLASS_PATH" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
       </option>
       <option name="PROPERTIES_FILE" value="" />
       <properties />
@@ -532,32 +921,6 @@
           <option name="PROGRAM_PARAMETERS" value=" stop" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method>
-        <option name="Make" value="true" />
-      </method>
-    </configuration>
-    <configuration default="false" name="DynamicFinderTest" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
-      <module name="code-monkey" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.wideplay.warp.persist.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.wideplay.warp.persist.dao.DynamicFinderTest" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ADDITIONAL_CLASS_PATH" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
       <method>
         <option name="Make" value="true" />
       </method>
@@ -648,7 +1011,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="26" width="1688" height="1028" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
@@ -657,23 +1020,23 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="7" />
       <window_info id="Log4jMonitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329455" order="1" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09369259" order="1" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
       <window_info id="Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
       <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3979933" order="4" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
       <window_info id="CVS" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.329455" order="0" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32821497" order="1" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19044703" order="0" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277592" order="1" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="1" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="6" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3277592" order="8" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277592" order="8" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" order="8" />
       <window_info id="Maven" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32664436" order="2" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32664436" order="2" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
       <window_info id="File View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="0" />
@@ -734,7 +1097,6 @@
       <option name="RECURSIVE" value="false" />
     </CheckinOptions>
     <AddOptions>
-      <option name="COMMENT" value="" />
       <option name="STORE_ONLY_LATEST_VERSION" value="false" />
       <option name="CHECK_OUT_IMMEDIATELY" value="false" />
       <option name="FILE_TYPE" value="0" />
@@ -769,87 +1131,123 @@
   <component name="com.intellij.ide.util.scopeChooser.ScopeChooserConfigurable" proportions="" version="1">
     <option name="myLastEditedConfigurable" />
   </component>
-  <component name="com.intellij.openapi.roots.ui.configuration.projectRoot.ProjectRootMasterDetailsConfigurable" proportions="0.16666667" version="1">
+  <component name="com.intellij.openapi.roots.ui.configuration.projectRoot.ProjectRootMasterDetailsConfigurable" proportions="0.16666667,0.5" version="1">
     <option name="myPlainMode" value="false" />
-    <option name="myLastEditedConfigurable" value="antlr-2.7.5h3.jar" />
+    <option name="myLastEditedConfigurable" value="code-monkey" />
   </component>
   <component name="com.intellij.profile.ui.ErrorOptionsConfigurable" proportions="" version="1">
     <option name="myLastEditedConfigurable" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test/GuiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="45" selection-start="683" selection-end="683" vertical-scroll-proportion="0.37146226">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/persist/AopAllianceAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="6" selection-start="523" selection-end="523" vertical-scroll-proportion="0.25404158">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/wideplay/warp/jpa/JpaTestEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="52" selection-start="559" selection-end="559" vertical-scroll-proportion="0.3207547">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/wideplay/warp/hibernate/HibernateTestEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="13" selection-start="463" selection-end="463" vertical-scroll-proportion="0.2606132">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/wideplay/warp/hibernate/SessionFactoryProvisionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="13" selection-start="891" selection-end="891" vertical-scroll-proportion="0.2052821">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/jpa/JpaBindingSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="13" selection-start="532" selection-end="532" vertical-scroll-proportion="0.22051887">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/hibernate/HibernateJtaTxnInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="6" selection-start="412" selection-end="412" vertical-scroll-proportion="0.25679758">
+        <state line="16" column="6" selection-start="412" selection-end="412" vertical-scroll-proportion="0.15919812">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/hibernate/HibernateBindingSupport.java">
+    <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/hibernate/HibernateLocalTxnInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="40" selection-start="1309" selection-end="1309" vertical-scroll-proportion="0.8731118">
+        <state line="13" column="6" selection-start="333" selection-end="333" vertical-scroll-proportion="0.2004717">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/persist/PersistenceService.java">
+    <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/jpa/JtaLocalTxnInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="22" selection-start="161" selection-end="161" vertical-scroll-proportion="0.23076923">
-          <folding />
+        <state line="4" column="0" selection-start="135" selection-end="135" vertical-scroll-proportion="-0.04245283">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/persist/Transactional.java">
+    <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/jpa/EntityManagerProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="33" selection-start="300" selection-end="364" vertical-scroll-proportion="0.23076923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/persist/dao/FirstResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="18" selection-start="390" selection-end="390" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/persist/dao/MaxResults.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="18" selection-start="390" selection-end="390" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/hibernate/SessionFactoryHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.36939722">
+        <state line="17" column="47" selection-start="471" selection-end="471" vertical-scroll-proportion="0.22051887">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/persist/PersistenceModule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="93" selection-start="2409" selection-end="2409" vertical-scroll-proportion="0.49554896">
+        <state line="52" column="22" selection-start="1806" selection-end="1806" vertical-scroll-proportion="0.48233217">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/jpa/EntityManagerFactoryHolder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1309" selection-end="1309" vertical-scroll-proportion="0.5903614">
-          <folding />
+        <state line="54" column="16" selection-start="1802" selection-end="1802" vertical-scroll-proportion="0.038869258">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/persist/dao/Finder.java">
+    <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/jpa/JpaPersistenceService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="489" selection-end="489" vertical-scroll-proportion="0.3363007">
-          <folding />
+        <state line="6" column="0" selection-start="157" selection-end="157" vertical-scroll-proportion="0.17844523">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/wideplay/warp/hibernate/TestEntity.java">
+    <entry file="file://$PROJECT_DIR$/test/com/wideplay/warp/jpa/EntityManagerFactoryProvisionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="58" selection-start="940" selection-end="940" vertical-scroll-proportion="0.62215626">
+        <state line="57" column="0" selection-start="1911" selection-end="1911" vertical-scroll-proportion="1.1433756">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="66" selection-start="602" selection-end="602" vertical-scroll-proportion="0.3303887">
           <folding />
         </state>
       </provider>

@@ -1,6 +1,8 @@
 package com.wideplay.warp.jpa;
 
 import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceException;
 
 /**
  * Created by IntelliJ IDEA.
@@ -10,7 +12,8 @@ import javax.persistence.EntityManagerFactory;
  * <p/>
  *
  * A placeholder that frees me from having to use statics to make a singleton EM factory,
- * so I can use per-injector singletons vs. per JVM/classloader singletons.
+ * so I can use per-injector singletons vs. per JVM/classloader singletons (which doesnt really work
+ * for several reasons).
  *
  * @author dprasanna
  * @since 1.0
@@ -20,6 +23,9 @@ class EntityManagerFactoryHolder {
 
     //A hack to provide the session factory statically to non-guice objects (interceptors), that can be thrown away come guice1.1
     private static volatile EntityManagerFactoryHolder singletonEmFactoryHolder;
+
+    //have to manage the em oursevles--not neat like hibernate =(
+    private static final ThreadLocal<EntityManager> entityManager = new ThreadLocal<EntityManager>();
 
     //store singleton
     public EntityManagerFactoryHolder() {
@@ -39,6 +45,31 @@ class EntityManagerFactoryHolder {
 
     static EntityManagerFactory getCurrentEntityManagerFactory() {
         return singletonEmFactoryHolder.getEntityManagerFactory();
+    }
+
+
+    static EntityManager getCurrentEntityManager() {
+        return entityManager.get();
+    }
+
+    static void closeCurrentEntityManager() {
+        EntityManager em = entityManager.get();
+
+        if (null != em) {
+            em.close();
+            entityManager.remove();
+        }
+    }
+
+    static EntityManager openEntityManager() {
+        EntityManager em = getCurrentEntityManagerFactory().createEntityManager();
+
+        if (null != entityManager.get())
+            throw new PersistenceException("An entity manager was already open when a new one was attempted (check your EM strategy and txn settings)");
+
+        entityManager.set(em);
+
+        return em;
     }
 
 

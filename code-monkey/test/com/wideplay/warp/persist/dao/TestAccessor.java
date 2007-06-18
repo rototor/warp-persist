@@ -1,7 +1,7 @@
 package com.wideplay.warp.persist.dao;
 
 import com.google.inject.name.Named;
-import com.wideplay.warp.hibernate.TestEntity;
+import com.wideplay.warp.hibernate.HibernateTestEntity;
 
 import java.util.List;
 import java.util.Set;
@@ -16,24 +16,24 @@ import java.util.HashSet;
  */
 public interface TestAccessor {
 
-    @Finder(query = "from TestEntity")
-    List<TestEntity> listAll();
+    @Finder(query = "from HibernateTestEntity")
+    List<HibernateTestEntity> listAll();
 
-    @Finder(query = "from TestEntity")
-    TestEntity[] listAllAsArray();
+    @Finder(query = "from HibernateTestEntity")
+    HibernateTestEntity[] listAllAsArray();
 
-    @Finder(namedQuery = TestEntity.LIST_ALL_QUERY)
-    List<TestEntity> listEverything();
+    @Finder(namedQuery = HibernateTestEntity.LIST_ALL_QUERY)
+    List<HibernateTestEntity> listEverything();
 
-    @Finder(query = "from TestEntity where text = :text", returnAs = HashSet.class)
-    Set<TestEntity> find(@Named("text") String id);
+    @Finder(query = "from HibernateTestEntity where text = :text", returnAs = HashSet.class)
+    Set<HibernateTestEntity> find(@Named("text") String id);
 
-    @Finder(query = "from TestEntity where id = :id")
-    TestEntity fetch(@Named("id") Long id);
+    @Finder(query = "from HibernateTestEntity where id = :id")
+    HibernateTestEntity fetch(@Named("id") Long id);
 
-    @Finder(query = "from TestEntity where id = ? and text = ?")
-    TestEntity fetchById(Long id, @MaxResults int i, String text);
+    @Finder(query = "from HibernateTestEntity where id = ? and text = ?")
+    HibernateTestEntity fetchById(Long id, @MaxResults int i, String text);
 
-    @Finder(query = "from TestEntity")
-    List<TestEntity> listAll(@MaxResults int i);
+    @Finder(query = "from HibernateTestEntity")
+    List<HibernateTestEntity> listAll(@MaxResults int i);
 }

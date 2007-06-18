@@ -6,6 +6,7 @@ import com.google.inject.matcher.Matcher;
 import com.google.inject.matcher.Matchers;
 import com.wideplay.warp.hibernate.HibernateBindingSupport;
 import com.wideplay.warp.persist.dao.Finder;
+import com.wideplay.warp.jpa.JpaBindingSupport;
 import org.aopalliance.intercept.MethodInterceptor;
 
 import java.util.LinkedHashSet;
@@ -47,7 +48,9 @@ class PersistenceModule extends AbstractModule {
                 finderInterceptor = HibernateBindingSupport.getFinderInterceptor();
                 break;
             case JPA:
-                super.addError("JPA support is not available in this release");
+                JpaBindingSupport.addBindings(binder());
+                txnInterceptor = JpaBindingSupport.getInterceptor(transactionStrategy);
+                break;
         }
 
         //bind the chosen txn interceptor

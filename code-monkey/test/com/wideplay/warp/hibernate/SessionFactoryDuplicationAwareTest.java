@@ -34,7 +34,7 @@ public class SessionFactoryDuplicationAwareTest {
 
                     protected void configure() {
                         bind(Configuration.class).toInstance(new AnnotationConfiguration()
-                            .addAnnotatedClass(TestEntity.class)
+                            .addAnnotatedClass(HibernateTestEntity.class)
                             .setProperties(Initializer.loadProperties("spt-persistence.properties")));
                     }
                 });

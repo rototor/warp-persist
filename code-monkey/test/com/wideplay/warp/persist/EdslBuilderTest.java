@@ -7,7 +7,7 @@ import com.google.inject.matcher.Matchers;
 import com.google.inject.Injector;
 import com.google.inject.Guice;
 import com.google.inject.AbstractModule;
-import com.wideplay.warp.hibernate.TestEntity;
+import com.wideplay.warp.hibernate.HibernateTestEntity;
 import com.wideplay.warp.persist.dao.TestAccessor;
 import com.wideplay.codemonkey.web.startup.Initializer;
 
@@ -35,7 +35,7 @@ public class EdslBuilderTest {
                 new AbstractModule() {
 
                     protected void configure() {
-                        bind(Configuration.class).toInstance(new AnnotationConfiguration().addAnnotatedClass(TestEntity.class)
+                        bind(Configuration.class).toInstance(new AnnotationConfiguration().addAnnotatedClass(HibernateTestEntity.class)
                                 .setProperties(Initializer.loadProperties("spt-persistence.properties")));
                     }
                 });

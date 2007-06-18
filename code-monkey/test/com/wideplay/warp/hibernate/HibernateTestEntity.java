@@ -16,11 +16,11 @@ import java.util.List;
  * @since 1.0
  */
 @Entity
-@NamedQuery(name = TestEntity.LIST_ALL_QUERY, query = "from TestEntity")
-public class TestEntity {
+@NamedQuery(name = HibernateTestEntity.LIST_ALL_QUERY, query = "from HibernateTestEntity")
+public class HibernateTestEntity {
     private Long id;
     private String text;
-    public static final String LIST_ALL_QUERY = "TestEntity.listAll";
+    public static final String LIST_ALL_QUERY = "HibernateTestEntity.listAll";
 
     @Id
     @GeneratedValue
@@ -40,6 +40,6 @@ public class TestEntity {
         this.text = text;
     }
 
-    @Finder(query = "from TestEntity")
-    public List<TestEntity> listAll() { return null; }
+    @Finder(query = "from HibernateTestEntity")
+    public List<HibernateTestEntity> listAll() { return null; }
 }

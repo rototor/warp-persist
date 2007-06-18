@@ -40,7 +40,7 @@ public class SessionProvisionTest {
 
                     protected void configure() {
                         bind(Configuration.class).toInstance(new AnnotationConfiguration()
-                            .addAnnotatedClass(TestEntity.class)
+                            .addAnnotatedClass(HibernateTestEntity.class)
                             .setProperties(Initializer.loadProperties("spt-persistence.properties")));
                     }
                 });
@@ -60,7 +60,7 @@ public class SessionProvisionTest {
         assert session.getTransaction().isActive() : "no active txn!";
 
         //obtain same session again (bound to txn)
-        TestEntity te = new TestEntity();
+        HibernateTestEntity te = new HibernateTestEntity();
         session.persist(te);
 
         assert session.contains(te) : "Persisting object failed";

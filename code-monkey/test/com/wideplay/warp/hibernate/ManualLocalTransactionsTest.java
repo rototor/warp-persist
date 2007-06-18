@@ -42,7 +42,7 @@ public class ManualLocalTransactionsTest {
 
                     protected void configure() {
                         bind(Configuration.class).toInstance(new AnnotationConfiguration()
-                            .addAnnotatedClass(TestEntity.class)
+                            .addAnnotatedClass(HibernateTestEntity.class)
                             .setProperties(Initializer.loadProperties("spr-managed-persistence.properties")));
                     }
                 });
@@ -56,7 +56,7 @@ public class ManualLocalTransactionsTest {
     public void testSimpleTransaction() {
         org.hibernate.classic.Session session1 = injector.getInstance(SessionFactory.class).openSession();
         ManagedSessionContext.bind(session1);
-        TestEntity entity = injector.getInstance(TransactionalObject.class).runOperationInTxn();
+        HibernateTestEntity entity = injector.getInstance(TransactionalObject.class).runOperationInTxn();
         injector.getInstance(ManualLocalTransactionsTest.TransactionalObject.class).runOperationInTxn2();
 
         assert injector.getInstance(Session.class).contains(entity) : "Session appears to have been closed across txns!";
@@ -65,8 +65,8 @@ public class ManualLocalTransactionsTest {
         //try to query them back out
 
         Session session = injector.getInstance(SessionFactory.class).openSession();
-        assert null != session.createCriteria(TestEntity.class).add(Expression.eq("text", UNIQUE_TEXT)).uniqueResult();
-        assert null != session.createCriteria(TestEntity.class).add(Expression.eq("text", UNIQUE_TEXT_2)).uniqueResult();
+        assert null != session.createCriteria(HibernateTestEntity.class).add(Expression.eq("text", UNIQUE_TEXT)).uniqueResult();
+        assert null != session.createCriteria(HibernateTestEntity.class).add(Expression.eq("text", UNIQUE_TEXT_2)).uniqueResult();
         session.close();
     }
 
@@ -76,8 +76,8 @@ public class ManualLocalTransactionsTest {
         Session session;
 
         @Transactional
-        public TestEntity runOperationInTxn() {
-            TestEntity entity = new TestEntity();
+        public HibernateTestEntity runOperationInTxn() {
+            HibernateTestEntity entity = new HibernateTestEntity();
             entity.setText(UNIQUE_TEXT);
             session.persist(entity);
 
@@ -86,7 +86,7 @@ public class ManualLocalTransactionsTest {
 
         @Transactional
         public void runOperationInTxn2() {
-            TestEntity entity = new TestEntity();
+            HibernateTestEntity entity = new HibernateTestEntity();
             entity.setText(UNIQUE_TEXT_2);
             session.persist(entity);
         }

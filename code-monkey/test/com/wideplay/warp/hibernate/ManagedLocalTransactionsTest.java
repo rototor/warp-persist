@@ -40,7 +40,7 @@ public class ManagedLocalTransactionsTest {
 
                     protected void configure() {
                         bind(Configuration.class).toInstance(new AnnotationConfiguration()
-                            .addAnnotatedClass(TestEntity.class)
+                            .addAnnotatedClass(HibernateTestEntity.class)
                             .setProperties(Initializer.loadProperties("spt-persistence.properties")));
                     }
                 }
@@ -60,12 +60,12 @@ public class ManagedLocalTransactionsTest {
 
         //test that the data has been stored
         session.beginTransaction();
-        Object result = session.createCriteria(TestEntity.class).add(Expression.eq("text", UNIQUE_TEXT)).uniqueResult();
+        Object result = session.createCriteria(HibernateTestEntity.class).add(Expression.eq("text", UNIQUE_TEXT)).uniqueResult();
         session.getTransaction().commit();
 
-        assert result instanceof TestEntity : "odd result returned fatal";
+        assert result instanceof HibernateTestEntity : "odd result returned fatal";
 
-        assert UNIQUE_TEXT.equals(((TestEntity)result).getText()) : "queried entity did not match--did automatic txn fail?";
+        assert UNIQUE_TEXT.equals(((HibernateTestEntity)result).getText()) : "queried entity did not match--did automatic txn fail?";
     }
 
     @Test
@@ -81,7 +81,7 @@ public class ManagedLocalTransactionsTest {
 
         //test that the data has been stored
         session.beginTransaction();
-        Object result = session.createCriteria(TestEntity.class).add(Expression.eq("text", TRANSIENT_UNIQUE_TEXT)).uniqueResult();
+        Object result = session.createCriteria(HibernateTestEntity.class).add(Expression.eq("text", TRANSIENT_UNIQUE_TEXT)).uniqueResult();
         session.getTransaction().commit();
 
         assert null == result : "a result was returned! rollback sure didnt happen!!!";
@@ -100,7 +100,7 @@ public class ManagedLocalTransactionsTest {
 
         //test that the data has been stored
         session.beginTransaction();
-        Object result = session.createCriteria(TestEntity.class).add(Expression.eq("text", TRANSIENT_UNIQUE_TEXT)).uniqueResult();
+        Object result = session.createCriteria(HibernateTestEntity.class).add(Expression.eq("text", TRANSIENT_UNIQUE_TEXT)).uniqueResult();
         session.getTransaction().commit();
 
         assert null == result : "a result was returned! rollback sure didnt happen!!!";
@@ -112,14 +112,14 @@ public class ManagedLocalTransactionsTest {
 
         @Transactional
         public void runOperationInTxn() {
-            TestEntity entity = new TestEntity();
+            HibernateTestEntity entity = new HibernateTestEntity();
             entity.setText(UNIQUE_TEXT);
             session.persist(entity);
         }
 
         @Transactional(rollbackOn = IOException.class)
         public void runOperationInTxnThrowingChecked() throws IOException {
-            TestEntity entity = new TestEntity();
+            HibernateTestEntity entity = new HibernateTestEntity();
             entity.setText(TRANSIENT_UNIQUE_TEXT);
             session.persist(entity);
             
@@ -128,7 +128,7 @@ public class ManagedLocalTransactionsTest {
         
         @Transactional
         public void runOperationInTxnThrowingUnchecked() {
-            TestEntity entity = new TestEntity();
+            HibernateTestEntity entity = new HibernateTestEntity();
             entity.setText(TRANSIENT_UNIQUE_TEXT);
             session.persist(entity);
 

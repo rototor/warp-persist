@@ -2,12 +2,8 @@ package com.wideplay.warp.jpa;
 
 import com.wideplay.warp.persist.PersistenceService;
 import com.google.inject.Inject;
-import com.google.inject.BindingAnnotation;
-import org.hibernate.cfg.Configuration;
 
 import javax.persistence.Persistence;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
 
 /**
  * Created with IntelliJ IDEA.
@@ -26,6 +22,9 @@ class JpaPersistenceService extends PersistenceService {
     public JpaPersistenceService(EntityManagerFactoryHolder sessionFactoryHolder, @JpaUnit String persistenceUnitName) {
         this.emFactoryHolder = sessionFactoryHolder;
         this.persistenceUnitName = persistenceUnitName;
+
+        assert null != persistenceUnitName && (!"".equals(persistenceUnitName.trim()))
+                : "Persistence unit name was not set! (please bindConstant().annotatedWith(JpaUnit.class) to the name of a persistence unit";
     }
 
     public void start() {
@@ -33,11 +32,6 @@ class JpaPersistenceService extends PersistenceService {
 
         //if necessary, set the JNDI lookup name of the JTA txn
     }
-
-    @BindingAnnotation
-    @Retention(RetentionPolicy.RUNTIME)
-    public @interface PersistenceProperties { }
-
 
     @Override
     public boolean equals(Object obj) {
