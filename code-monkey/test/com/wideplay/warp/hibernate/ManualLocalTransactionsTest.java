@@ -53,7 +53,7 @@ public class ManualLocalTransactionsTest {
     }
 
     @Test
-    public void testSimpleTransaction() {
+    public void testSimpleCrossTxnWork() {
         org.hibernate.classic.Session session1 = injector.getInstance(SessionFactory.class).openSession();
         ManagedSessionContext.bind(session1);
         HibernateTestEntity entity = injector.getInstance(TransactionalObject.class).runOperationInTxn();

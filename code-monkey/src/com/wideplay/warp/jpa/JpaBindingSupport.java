@@ -4,8 +4,7 @@ import com.google.inject.Binder;
 import com.google.inject.Singleton;
 import com.wideplay.warp.persist.PersistenceService;
 import com.wideplay.warp.persist.TransactionStrategy;
-import org.hibernate.SessionFactory;
-import org.hibernate.Session;
+import com.wideplay.warp.persist.UnitOfWork;
 import org.aopalliance.intercept.MethodInterceptor;
 
 import javax.persistence.EntityManagerFactory;
@@ -33,10 +32,17 @@ public class JpaBindingSupport {
         binder.bind(PersistenceService.class).to(JpaPersistenceService.class).in(Singleton.class);
     }
 
+    //how ugly this static setup stuff is, ick. Please give us managed interceptors already guice!!!
+    public static void setUnitOfWork(UnitOfWork unitOfWork) {
+        //set the default unit-of-work strategy
+        JpaLocalTxnInterceptor.setUnitOfWork(unitOfWork);
+    }
+
     public static MethodInterceptor getInterceptor(TransactionStrategy transactionStrategy) {
+
         switch (transactionStrategy) {
             case LOCAL:
-//                return new HibernateLocalTxnInterceptor();
+                return new JpaLocalTxnInterceptor();
             case JTA:
 //                return new HibernateJtaTxnInterceptor();
         }

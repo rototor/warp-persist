@@ -46,7 +46,7 @@ public class SessionProvisionTest {
                 });
 
         //startup persistence
-        injector.getInstance(HibernatePersistenceService.class)
+        injector.getInstance(PersistenceService.class)
                 .start();
     }
 

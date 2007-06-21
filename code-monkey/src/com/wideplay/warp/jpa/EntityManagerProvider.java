@@ -1,11 +1,8 @@
 package com.wideplay.warp.jpa;
 
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
 import com.google.inject.Provider;
 import com.google.inject.Inject;
 
-import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityManager;
 
 /**
@@ -15,14 +12,14 @@ import javax.persistence.EntityManager;
  * @author Dhanji R. Prasanna
  */
 class EntityManagerProvider implements Provider<EntityManager> {
-    private final EntityManagerFactory factory;
+    private final EntityManagerFactoryHolder holder;
 
     @Inject
-    public EntityManagerProvider(EntityManagerFactory factory) {
-        this.factory = factory;
+    public EntityManagerProvider(EntityManagerFactoryHolder holder) {
+        this.holder = holder;
     }
 
     public EntityManager get() {
-        return factory.createEntityManager();
+        return holder.getEntityManager();
     }
 }

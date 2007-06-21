@@ -2,9 +2,11 @@ package com.wideplay.warp.hibernate;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterClass;
 import org.hibernate.cfg.AnnotationConfiguration;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.Session;
+import org.hibernate.SessionFactory;
 import org.hibernate.criterion.Expression;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
@@ -49,6 +51,10 @@ public class ManagedLocalTransactionsTest {
         //startup persistence
         injector.getInstance(PersistenceService.class)
                 .start();
+    }
+
+    @AfterClass void post() {
+        injector.getInstance(SessionFactory.class).close();
     }
 
     @Test

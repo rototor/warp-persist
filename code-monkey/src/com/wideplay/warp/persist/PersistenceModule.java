@@ -50,6 +50,7 @@ class PersistenceModule extends AbstractModule {
             case JPA:
                 JpaBindingSupport.addBindings(binder());
                 txnInterceptor = JpaBindingSupport.getInterceptor(transactionStrategy);
+                JpaBindingSupport.setUnitOfWork(unitOfWork);
                 break;
         }
 

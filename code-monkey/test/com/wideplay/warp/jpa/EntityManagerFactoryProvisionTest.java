@@ -24,6 +24,7 @@ import javax.persistence.EntityManager;
  * @author dprasanna
  * @since 1.0
  */
+@Test(suiteName = "jpa")
 public class EntityManagerFactoryProvisionTest {
     private Injector injector;
 
@@ -45,7 +46,6 @@ public class EntityManagerFactoryProvisionTest {
 
     @AfterTest public final void post() {
         EntityManagerFactoryHolder.closeCurrentEntityManager();
-        EntityManagerFactoryHolder.getCurrentEntityManagerFactory().close();
     }
 
     @Test
@@ -58,7 +58,7 @@ public class EntityManagerFactoryProvisionTest {
         injector.getInstance(PersistenceService.class)
                 .start();
 
-        //obtain session
+        //obtain em
         assert injector.getInstance(EntityManager.class).isOpen() : "EM is not open!";
     }
 }

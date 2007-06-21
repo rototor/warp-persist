@@ -51,7 +51,7 @@ public class SessionFactoryProvisionTest {
     public void testSessionCreateOnInjection() {
         assert injector.getInstance(SessionFactoryHolder.class).equals(injector.getInstance(SessionFactoryHolder.class));
 
-        assert injector.getInstance(HibernatePersistenceService.class).equals(injector.getInstance(HibernatePersistenceService.class)) : "SINGLETON VIOLATION " + HibernatePersistenceService.class.getName() ;
+        assert injector.getInstance(PersistenceService.class).equals(injector.getInstance(PersistenceService.class)) : "SINGLETON VIOLATION " + PersistenceService.class.getName() ;
 
         //startup persistence
         injector.getInstance(PersistenceService.class)

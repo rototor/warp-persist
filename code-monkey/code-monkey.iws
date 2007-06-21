@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="4" relativePaths="false">
+<project relativePaths="false" version="4">
   <component name="BookmarkManager" />
   <component name="ChangeBrowserSettings">
     <option name="MAIN_SPLITTER_PROPORTION" value="0.3" />
@@ -17,32 +17,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/hibernate/HibernateTestEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/wideplay/warp/persist/dao/DynamicFinderTest.java" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/persist/dao/DynamicFinderTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/jpa/EntityManagerFactoryDuplicationAwareTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/jpa/EntityManagerProvisionTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code-monkey.iml" afterPath="$PROJECT_DIR$/code-monkey.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code-monkey.iws" afterPath="$PROJECT_DIR$/code-monkey.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/wideplay/warp/persist/EdslBuilderTest.java" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/persist/EdslBuilderTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/wideplay/warp/persist/dao/TestAccessor.java" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/persist/dao/TestAccessor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/META-INF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/wideplay/warp/jpa/JpaBindingSupport.java" afterPath="$PROJECT_DIR$/src/com/wideplay/warp/jpa/JpaBindingSupport.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/jboss-archive-browsing.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/hibernate-entitymanager.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/wideplay/warp/hibernate/SessionProvisionTest.java" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/hibernate/SessionProvisionTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/wideplay/warp/persist/PersistenceModule.java" afterPath="$PROJECT_DIR$/src/com/wideplay/warp/persist/PersistenceModule.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/javassist.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/wideplay/warp/jpa/EntityManagerFactoryProvisionTest.java" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/jpa/EntityManagerFactoryProvisionTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/wideplay/warp/jpa/EntityManagerFactoryHolder.java" afterPath="$PROJECT_DIR$/src/com/wideplay/warp/jpa/EntityManagerFactoryHolder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/wideplay/warp/jpa/JpaPersistenceService.java" afterPath="$PROJECT_DIR$/src/com/wideplay/warp/jpa/JpaPersistenceService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/wideplay/warp/jpa/EntityManagerFactoryProvider.java" afterPath="$PROJECT_DIR$/src/com/wideplay/warp/jpa/EntityManagerFactoryProvider.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/wideplay/warp/hibernate/ManualLocalTransactionsTest.java" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/hibernate/ManualLocalTransactionsTest.java" />
-      <change type="DELETED" beforePath="C:\workspace\warp-persist\test\com\wideplay\warp\hibernate\TestEntity.java" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/jpa/JpaTestEntity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/jpa" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/jpa/ManagedLocalTransactionsTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/META-INF/persistence.xml" afterPath="$PROJECT_DIR$/test/META-INF/persistence.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/code-monkey.ipr" afterPath="$PROJECT_DIR$/code-monkey.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/wideplay/warp/hibernate/SessionFactoryProvisionTest.java" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/hibernate/SessionFactoryProvisionTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/META-INF/persistence.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/GuiceTest.java" afterPath="$PROJECT_DIR$/test/GuiceTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/jpa/EntityManagerFactoryProvisionTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/wideplay/warp/jpa/JtaLocalTxnInterceptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/wideplay/warp/hibernate/SessionFactoryDuplicationAwareTest.java" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/hibernate/SessionFactoryDuplicationAwareTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/jpa/ManualLocalTransactionsTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/wideplay/warp/jpa/JpaLocalTxnInterceptor.java" afterPath="$PROJECT_DIR$/src/com/wideplay/warp/jpa/JpaLocalTxnInterceptor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/com/wideplay/warp/hibernate/ManagedLocalTransactionsTest.java" afterPath="$PROJECT_DIR$/test/com/wideplay/warp/hibernate/ManagedLocalTransactionsTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/wideplay/warp/jpa/EntityManagerProvider.java" afterPath="$PROJECT_DIR$/src/com/wideplay/warp/jpa/EntityManagerProvider.java" />
     </list>
   </component>
   <component name="ChangeListSynchronizer" />
-  <component name="ChangesViewManager" flattened_view="true" />
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CheckinPanelState" />
   <component name="Commander">
     <leftPanel />
@@ -117,9 +117,9 @@
         <option name="NOTIFY_CAUGHT" value="true" />
         <option name="NOTIFY_UNCAUGHT" value="true" />
         <option name="ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
         <option name="COUNT_FILTER_ENABLED" value="false" />
         <option name="COUNT_FILTER" value="0" />
         <option name="CONDITION_ENABLED" value="false" />
@@ -132,9 +132,9 @@
         <option name="NOTIFY_CAUGHT" value="true" />
         <option name="NOTIFY_UNCAUGHT" value="true" />
         <option name="ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
         <option name="COUNT_FILTER_ENABLED" value="false" />
         <option name="COUNT_FILTER" value="0" />
         <option name="CONDITION_ENABLED" value="false" />
@@ -145,7 +145,37 @@
       </breakpoint>
     </breakpoint_any>
     <breakpoint_rules />
-    <ui_properties />
+    <ui_properties>
+      <property name="exception_breakpoints_flattenPackages" value="true" />
+      <property name="line_breakpoints_groupByClasses" value="true" />
+      <property name="exception_breakpoints_groupByMethods" value="false" />
+      <property name="method_breakpoints_viewId" value="TABLE" />
+      <property name="line_breakpoints_viewId" value="TABLE" />
+      <property name="exception_breakpoints_groupByClasses" value="true" />
+      <property name="method_breakpoints_groupByMethods" value="false" />
+      <property name="field_breakpoints_flattenPackages" value="true" />
+      <property name="line_breakpoints_flattenPackages" value="true" />
+      <property name="exception_breakpoints_viewId" value="TABLE" />
+      <property name="field_breakpoints_groupByClasses" value="true" />
+      <property name="method_breakpoints_flattenPackages" value="true" />
+      <property name="field_breakpoints_viewId" value="TABLE" />
+      <property name="line_breakpoints_groupByMethods" value="false" />
+      <property name="method_breakpoints_groupByClasses" value="true" />
+      <property name="field_breakpoints_groupByMethods" value="false" />
+    </ui_properties>
+  </component>
+  <component name="ErrorOptionsConfigurable.UI">
+    <option name="proportions">
+      <SplitterProportionsDataImpl>
+        <option name="proportions">
+          <collection>
+            <option value="0.5" />
+            <option value="0.5314286" />
+          </collection>
+        </option>
+      </SplitterProportionsDataImpl>
+    </option>
+    <option name="lastEditedConfigurable" value="Default" />
   </component>
   <component name="ErrorTreeViewConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -166,41 +196,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EntityManagerFactoryProvisionTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/com/wideplay/warp/jpa/EntityManagerFactoryProvisionTest.java">
+      <file leaf-file-name="ManualLocalTransactionsTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/wideplay/warp/jpa/ManualLocalTransactionsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="0" selection-start="1911" selection-end="1911" vertical-scroll-proportion="1.1433756">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PersistenceModule.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/persist/PersistenceModule.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="22" selection-start="1806" selection-end="1806" vertical-scroll-proportion="0.48233217">
+            <state line="68" column="63" selection-start="2584" selection-end="2584" vertical-scroll-proportion="0.27866971">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JpaPersistenceService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/jpa/JpaPersistenceService.java">
+      <file leaf-file-name="ManualLocalTransactionsTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/wideplay/warp/hibernate/ManualLocalTransactionsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="157" selection-end="157" vertical-scroll-proportion="0.17844523">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="55" column="38" selection-start="1865" selection-end="1865" vertical-scroll-proportion="0.27293578">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="persistence.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/META-INF/persistence.xml">
+      <file leaf-file-name="ManagedLocalTransactionsTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/com/wideplay/warp/jpa/ManagedLocalTransactionsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="66" selection-start="602" selection-end="602" vertical-scroll-proportion="0.3303887">
+            <state line="56" column="0" selection-start="1871" selection-end="1871" vertical-scroll-proportion="0.2178899">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EntityManagerFactoryHolder.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/jpa/EntityManagerFactoryHolder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="78" column="54" selection-start="2456" selection-end="2456" vertical-scroll-proportion="0.6272936">
               <folding />
             </state>
           </provider>
@@ -228,7 +254,8 @@
     <option name="SCOPE_TYPE" value="1" />
     <option name="CUSTOM_SCOPE_NAME" value="" />
     <option name="SHOW_ONLY_DIFF" value="false" />
-    <option name="myCurrentProfileName" value="Default" />
+    <option name="SHOW_STRUCTURE" value="true" />
+    <option name="ANALYSIS_IN_BACKGROUND" value="false" />
   </component>
   <component name="J2EEProjectPane" />
   <component name="JspContextManager" />
@@ -301,7 +328,7 @@
     <subPane>
       <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="code-monkey.ipr" />
+          <option name="myItemId" value="code-monkey" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -311,7 +338,7 @@
       </PATH>
       <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="code-monkey.ipr" />
+          <option name="myItemId" value="code-monkey" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -325,7 +352,7 @@
       </PATH>
       <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="code-monkey.ipr" />
+          <option name="myItemId" value="code-monkey" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -343,7 +370,7 @@
       </PATH>
       <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="code-monkey.ipr" />
+          <option name="myItemId" value="code-monkey" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -365,7 +392,7 @@
       </PATH>
       <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="code-monkey.ipr" />
+          <option name="myItemId" value="code-monkey" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -395,7 +422,41 @@
       </PATH>
       <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="code-monkey.ipr" />
+          <option name="myItemId" value="code-monkey" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="code-monkey" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\test" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\test\com\wideplay" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\test\com\wideplay\warp" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\test\com\wideplay\warp\persist" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\test\com\wideplay\warp\persist\dao" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="code-monkey" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -425,7 +486,7 @@
       </PATH>
       <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="code-monkey.ipr" />
+          <option name="myItemId" value="code-monkey" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -455,7 +516,7 @@
       </PATH>
       <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="code-monkey.ipr" />
+          <option name="myItemId" value="code-monkey" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -477,7 +538,7 @@
       </PATH>
       <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="code-monkey.ipr" />
+          <option name="myItemId" value="code-monkey" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -495,7 +556,7 @@
       </PATH>
       <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="code-monkey.ipr" />
+          <option name="myItemId" value="code-monkey" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -518,14 +579,10 @@
           <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\src\com\wideplay\warp" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\src\com\wideplay\warp\persist" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
       </PATH>
       <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="code-monkey.ipr" />
+          <option name="myItemId" value="code-monkey" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -555,37 +612,7 @@
       </PATH>
       <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="code-monkey.ipr" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
           <option name="myItemId" value="code-monkey" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\src\com\wideplay" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\src\com\wideplay\warp" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:C:\workspace\warp-persist\src\com\wideplay\warp\hibernate" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="code-monkey.ipr" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
         </PATH_ELEMENT>
         <PATH_ELEMENT>
@@ -610,6 +637,19 @@
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
+  <component name="ProjectRootConfigurable.UI">
+    <option name="proportions">
+      <SplitterProportionsDataImpl>
+        <option name="proportions">
+          <collection>
+            <option value="0.16666667" />
+            <option value="0.5" />
+          </collection>
+        </option>
+      </SplitterProportionsDataImpl>
+    </option>
+    <option name="lastEditedConfigurable" value="code-monkey" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="0.16666667" version="1" splitterProportion="0.5">
       <flattenPackages />
@@ -618,7 +658,7 @@
       <showLibraryContents />
       <hideEmptyPackages />
       <abbreviatePackageNames />
-      <showStructure Scope="false" ProjectPane="false" PackagesPane="false" Favorites="false" />
+      <showStructure Favorites="false" Scope="false" PackagesPane="false" ProjectPane="false" />
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType ProjectPane="true" />
@@ -672,7 +712,82 @@
     <option name="showLabels" value="true" />
   </component>
   <component name="RestoreUpdateTree" />
-  <component name="RunManager" selected="TestNG.EntityManagerFactoryProvisionTest">
+  <component name="RunManager" selected="TestNG.com.wideplay.warp.hibernate">
+    <tempConfiguration default="false" name="ManualLocalTransactionsTest" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
+      <module name="code-monkey" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.wideplay.warp.hibernate" />
+      <option name="MAIN_CLASS_NAME" value="com.wideplay.warp.hibernate.ManualLocalTransactionsTest" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="ADDITIONAL_CLASS_PATH" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method>
+        <option name="Make" value="true" />
+      </method>
+    </tempConfiguration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local">
+      <option name="WORKING_DIRECTORY" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="8080" />
+      <option name="LOCAL" value="true" />
+      <option name="OPEN_IN_BROWSER" value="true" />
+      <option name="OPEN_IN_BROWSER_URL" value="/" />
+      <option name="COMMON_VM_ARGUMENTS" value="" />
+      <J2EE_MODULE DEPLOYMENT_SOURCE_NAME="exploded">
+        <option name="CONTEXT_PATH" value="/" />
+        <option name="MODULE_NAME" value="code-monkey" />
+        <option name="DEPLOY" value="false" />
+      </J2EE_MODULE>
+      <option name="DEPLOY_TOMCAT_MANAGER" value="false" />
+      <option name="BASE_DIRECTORY_NAME" value="" />
+      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application" enabled="false" merge="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <module name="" />
+      <method>
+        <option name="Make" value="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -697,25 +812,6 @@
         <option name="Make" value="true" />
       </method>
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit" enabled="false" merge="false">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -735,37 +831,7 @@
         <option name="Make" value="true" />
       </method>
     </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local">
-      <option name="WORKING_DIRECTORY" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="8080" />
-      <option name="LOCAL" value="true" />
-      <option name="OPEN_IN_BROWSER" value="true" />
-      <option name="OPEN_IN_BROWSER_URL" value="/" />
-      <option name="COMMON_VM_ARGUMENTS" value="" />
-      <J2EE_MODULE DEPLOYMENT_SOURCE_NAME="exploded">
-        <option name="CONTEXT_PATH" value="/" />
-        <option name="MODULE_NAME" value="code-monkey" />
-        <option name="DEPLOY" value="false" />
-      </J2EE_MODULE>
-      <option name="DEPLOY_TOMCAT_MANAGER" value="false" />
-      <option name="BASE_DIRECTORY_NAME" value="" />
-      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application" enabled="false" merge="false">
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <module name="" />
-      <method>
-        <option name="Make" value="true" />
-      </method>
-    </configuration>
-    <configuration default="false" name="HibernateTestSuite" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
+    <configuration default="false" name="com.wideplay.warp.hibernate" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
       <module name="code-monkey" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
@@ -791,75 +857,23 @@
         <option name="Make" value="true" />
       </method>
     </configuration>
-    <configuration default="false" name="DynamicFinderTest" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
-      <module name="code-monkey" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.wideplay.warp.persist.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.wideplay.warp.persist.dao.DynamicFinderTest" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ADDITIONAL_CLASS_PATH" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="wholeProject" />
-      </option>
-      <option name="PROPERTIES_FILE" />
-      <properties />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method>
-        <option name="Make" value="true" />
-      </method>
-    </configuration>
-    <configuration default="false" name="GuiceTest" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
+    <configuration default="false" name="com.wideplay.warp.jpa" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
       <module name="code-monkey" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GuiceTest" />
-      <option name="METHOD_NAME" />
+      <option name="PACKAGE_NAME" value="com.wideplay.warp.jpa" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
       <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="OUTPUT_DIRECTORY" value="" />
       <option name="ADDITIONAL_CLASS_PATH" />
       <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
-      <properties />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method>
-        <option name="Make" value="true" />
-      </method>
-    </configuration>
-    <configuration default="false" name="EntityManagerFactoryProvisionTest" type="TestNG" factoryName="TestNG" enabled="false" merge="false">
-      <module name="code-monkey" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="com.wideplay.warp.jpa" />
-      <option name="MAIN_CLASS_NAME" value="com.wideplay.warp.jpa.EntityManagerFactoryProvisionTest" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/classes/test/code-monkey" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="ADDITIONAL_CLASS_PATH" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
+        <value defaultName="wholeProject" />
       </option>
       <option name="PROPERTIES_FILE" value="" />
       <properties />
@@ -930,6 +944,11 @@
       <Port>5050</Port>
     </configuration>
   </component>
+  <component name="ScopeChooserConfigurable.UI">
+    <option name="proportions">
+      <SplitterProportionsDataImpl />
+    </option>
+  </component>
   <component name="ScopeViewComponent">
     <subPane subId="Project">
       <PATH>
@@ -984,15 +1003,11 @@
   <component name="SvnConfiguration">
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
-    <option name="PROCESS_UNRESOLVED" value="false" />
     <option name="LAST_MERGED_REVISION" />
     <option name="UPDATE_RUN_STATUS" value="false" />
     <option name="UPDATE_RECURSIVELY" value="true" />
     <option name="MERGE_DRY_RUN" value="false" />
     <configuration useDefault="true">C:\Documents and Settings\Compaq_Administrator\Application Data\Subversion</configuration>
-    <checkoutURL>https://warp-persist.googlecode.com/svn/trunk/</checkoutURL>
-    <checkoutURL>https://warp-core.googlecode.com/svn/</checkoutURL>
-    <checkoutURL>http://https://warp-core.googlecode.com/svn/</checkoutURL>
     <upgradeMode>auto</upgradeMode>
   </component>
   <component name="TodoView" selected-index="0">
@@ -1010,42 +1025,42 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="26" width="1688" height="1028" extended-state="0" />
+    <frame x="-4" y="26" width="1688" height="1028" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
-      <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
-      <window_info id="Digger" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="7" />
-      <window_info id="Log4jMonitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19044703" order="0" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32668883" order="1" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="1" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32668883" order="8" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="6" />
+      <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09369259" order="1" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" order="8" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3255814" order="2" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.551495" order="4" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="0" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
+      <window_info id="Duplicates" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
+      <window_info id="Regex" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="0" />
+      <window_info id="Digger" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
+      <window_info id="Log4jMonitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
       <window_info id="Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
       <window_info id="Dilbert" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3979933" order="4" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
       <window_info id="CVS" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19044703" order="0" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277592" order="1" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="1" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="6" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277592" order="8" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
-      <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" order="8" />
-      <window_info id="Maven" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32664436" order="2" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
-      <window_info id="File View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="0" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="0" />
-      <window_info id="Duplicates" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
       <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="3" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="5" />
+      <window_info id="Maven" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
+      <window_info id="File View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="EmbeddedBrowser" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
     </layout>
   </component>
@@ -1061,11 +1076,10 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="PERFORM_UPDATE_IN_BACKGROUND" value="false" />
     <option name="PERFORM_COMMIT_IN_BACKGROUND" value="false" />
-    <option name="PUT_FOCUS_INTO_COMMENT" value="false" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="dynamic finders added" />
-    <option name="SAVE_LAST_COMMIT_MESSAGE" value="true" />
-    <option name="CHECKIN_DIALOG_SPLITTER_PROPORTION" value="0.8" />
+    <option name="LAST_COMMIT_MESSAGE" value="jpa support tests, lots of bug fixes." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
@@ -1078,6 +1092,8 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="build script added" />
     <MESSAGE value="dynamic finders added" />
+    <MESSAGE value="jpa support early tests" />
+    <MESSAGE value="jpa support tests, lots of bug fixes." />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -1139,115 +1155,111 @@
     <option name="myLastEditedConfigurable" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/GuiceTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/jpa/EntityManagerProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="45" selection-start="683" selection-end="683" vertical-scroll-proportion="0.37146226">
+        <state line="22" column="27" selection-start="543" selection-end="543" vertical-scroll-proportion="0.37041286">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/persist/AopAllianceAdapter.java">
+    <entry file="file://$PROJECT_DIR$/test/com/wideplay/warp/hibernate/SessionFactoryDuplicationAwareTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="6" selection-start="523" selection-end="523" vertical-scroll-proportion="0.25404158">
+        <state line="22" column="13" selection-start="682" selection-end="682" vertical-scroll-proportion="0.21896955">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/wideplay/warp/jpa/JpaTestEntity.java">
+    <entry file="jar://$PROJECT_DIR$/lib/hibernate-entitymanager.jar!/org/hibernate/ejb/QueryImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="52" selection-start="559" selection-end="559" vertical-scroll-proportion="0.3207547">
+        <state line="41" column="0" selection-start="2160" selection-end="2160" vertical-scroll-proportion="0.81654674">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/wideplay/warp/hibernate/HibernateTestEntity.java">
+    <entry file="jar://$PROJECT_DIR$/lib/hibernate-entitymanager.jar!/org/hibernate/ejb/TransactionImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="463" selection-end="463" vertical-scroll-proportion="0.2606132">
+        <state line="25" column="0" selection-start="917" selection-end="917" vertical-scroll-proportion="0.7145359">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/wideplay/warp/hibernate/SessionFactoryProvisionTest.java">
+    <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/jpa/EntityManagerFactoryProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="13" selection-start="891" selection-end="891" vertical-scroll-proportion="0.2052821">
+        <state line="15" column="18" selection-start="350" selection-end="350" vertical-scroll-proportion="0.35726795">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/jpa/JpaBindingSupport.java">
+    <entry file="file://$PROJECT_DIR$/test/com/wideplay/warp/hibernate/ManagedLocalTransactionsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="13" selection-start="532" selection-end="532" vertical-scroll-proportion="0.22051887">
+        <state line="56" column="59" selection-start="1937" selection-end="1937" vertical-scroll-proportion="0.5963303">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/hibernate/HibernateJtaTxnInterceptor.java">
+    <entry file="jar://$PROJECT_DIR$/lib/testng-5.5-jdk15.jar!/org/testng/annotations/Test.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="6" selection-start="412" selection-end="412" vertical-scroll-proportion="0.15919812">
+        <state line="5" column="269" selection-start="416" selection-end="416" vertical-scroll-proportion="0.07934656">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/hibernate/HibernateLocalTxnInterceptor.java">
+    <entry file="file://$PROJECT_DIR$/test/com/wideplay/warp/jpa/EntityManagerFactoryProvisionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="6" selection-start="333" selection-end="333" vertical-scroll-proportion="0.2004717">
+        <state line="26" column="24" selection-start="691" selection-end="691" vertical-scroll-proportion="0.30393326">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/jpa/JtaLocalTxnInterceptor.java">
+    <entry file="file://$PROJECT_DIR$/test/com/wideplay/warp/jpa/EntityManagerProvisionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="135" selection-end="135" vertical-scroll-proportion="-0.04245283">
+        <state line="27" column="24" selection-start="766" selection-end="766" vertical-scroll-proportion="0.3325527">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/jpa/EntityManagerProvider.java">
+    <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/jpa/JpaLocalTxnInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="47" selection-start="471" selection-end="471" vertical-scroll-proportion="0.22051887">
+        <state line="48" column="0" selection-start="1576" selection-end="1576" vertical-scroll-proportion="0.9357798">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/wideplay/warp/jpa/EntityManagerFactoryDuplicationAwareTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="13" selection-start="757" selection-end="757" vertical-scroll-proportion="0.23394495">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/persist/PersistenceModule.java">
+    <entry file="file://$PROJECT_DIR$/test/com/wideplay/warp/jpa/ManualLocalTransactionsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="22" selection-start="1806" selection-end="1806" vertical-scroll-proportion="0.48233217">
+        <state line="68" column="63" selection-start="2584" selection-end="2584" vertical-scroll-proportion="0.27866971">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/wideplay/warp/hibernate/ManualLocalTransactionsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="38" selection-start="1865" selection-end="1865" vertical-scroll-proportion="0.27293578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/com/wideplay/warp/jpa/ManagedLocalTransactionsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="0" selection-start="1871" selection-end="1871" vertical-scroll-proportion="0.2178899">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/jpa/EntityManagerFactoryHolder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="16" selection-start="1802" selection-end="1802" vertical-scroll-proportion="0.038869258">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/wideplay/warp/jpa/JpaPersistenceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="157" selection-end="157" vertical-scroll-proportion="0.17844523">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/com/wideplay/warp/jpa/EntityManagerFactoryProvisionTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="0" selection-start="1911" selection-end="1911" vertical-scroll-proportion="1.1433756">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/META-INF/persistence.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="66" selection-start="602" selection-end="602" vertical-scroll-proportion="0.3303887">
+        <state line="78" column="54" selection-start="2456" selection-end="2456" vertical-scroll-proportion="0.6272936">
           <folding />
         </state>
       </provider>
@@ -1299,6 +1311,7 @@
   <component name="testng.defaultConfiguration">
     <outputDirectory />
     <properties />
+    <groups />
   </component>
 </project>
 

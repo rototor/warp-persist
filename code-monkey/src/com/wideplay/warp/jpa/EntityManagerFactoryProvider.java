@@ -13,7 +13,7 @@ import javax.persistence.EntityManagerFactory;
  * @since 1.0
  */
 class EntityManagerFactoryProvider implements Provider<EntityManagerFactory> {
-    private EntityManagerFactoryHolder emFactoryHolder;
+    private final EntityManagerFactoryHolder emFactoryHolder;
 
     @Inject
     public EntityManagerFactoryProvider(EntityManagerFactoryHolder sessionFactoryHolder) {

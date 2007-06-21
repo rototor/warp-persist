@@ -5,8 +5,8 @@ import org.aopalliance.intercept.MethodInvocation;
 import com.wideplay.warp.persist.Transactional;
 import com.wideplay.warp.persist.UnitOfWork;
 
-import javax.persistence.EntityTransaction;
 import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
 
 /**
  * Created with IntelliJ IDEA.
@@ -14,19 +14,14 @@ import javax.persistence.EntityManager;
  *
  * @author Dhanji R. Prasanna
  */
-class JtaLocalTxnInterceptor implements MethodInterceptor {
+class JpaLocalTxnInterceptor implements MethodInterceptor {
     private static UnitOfWork unitOfWork;
 
     public Object invoke(MethodInvocation methodInvocation) throws Throwable {
-        EntityManager em;
-
-        if (isUnitOfWorkTransaction())
-            em = EntityManagerFactoryHolder.openEntityManager();
-        else
-            em = EntityManagerFactoryHolder.getCurrentEntityManager();
+        EntityManager em = EntityManagerFactoryHolder.getCurrentEntityManager();
 
         //start txn
-        EntityTransaction txn = em.getTransaction();
+        final EntityTransaction txn = em.getTransaction();
         txn.begin();
 
         Object result;
@@ -49,8 +44,9 @@ class JtaLocalTxnInterceptor implements MethodInterceptor {
             throw e;
         } finally {
             //close the em if necessary
-            if (isUnitOfWorkTransaction())
+            if (isUnitOfWorkTransaction()) {
                 EntityManagerFactoryHolder.closeCurrentEntityManager();
+            }
         }
 
         //or return result
@@ -63,6 +59,6 @@ class JtaLocalTxnInterceptor implements MethodInterceptor {
 
 
     static void setUnitOfWork(UnitOfWork unitOfWork) {
-        JtaLocalTxnInterceptor.unitOfWork = unitOfWork;
+        JpaLocalTxnInterceptor.unitOfWork = unitOfWork;
     }
 }

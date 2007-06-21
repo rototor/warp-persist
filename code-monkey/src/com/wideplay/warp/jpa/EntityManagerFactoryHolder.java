@@ -19,13 +19,13 @@ import javax.persistence.PersistenceException;
  * @since 1.0
  */
 class EntityManagerFactoryHolder {
-    private volatile EntityManagerFactory entityManagerFactory;
+    private EntityManagerFactory entityManagerFactory;
 
-    //A hack to provide the session factory statically to non-guice objects (interceptors), that can be thrown away come guice1.1
+    //A hack to provide the EntityManager factory statically to non-guice objects (interceptors), that can be thrown away come guice1.1
     private static volatile EntityManagerFactoryHolder singletonEmFactoryHolder;
 
     //have to manage the em oursevles--not neat like hibernate =(
-    private static final ThreadLocal<EntityManager> entityManager = new ThreadLocal<EntityManager>();
+    private final ThreadLocal<EntityManager> entityManager = new ThreadLocal<EntityManager>();
 
     //store singleton
     public EntityManagerFactoryHolder() {
@@ -38,7 +38,7 @@ class EntityManagerFactoryHolder {
 
     synchronized void setEntityManagerFactory(EntityManagerFactory entityManagerFactory) {
         if (null != this.entityManagerFactory)
-            throw new RuntimeException("Duplicate session factory creation! Only one session factory is allowed per injector");
+            throw new RuntimeException("Duplicate EntityManager factory creation! Only one EntityManager factory is allowed per injector");
 
         this.entityManagerFactory = entityManagerFactory;
     }
@@ -48,26 +48,27 @@ class EntityManagerFactoryHolder {
     }
 
 
-    static EntityManager getCurrentEntityManager() {
-        return entityManager.get();
-    }
+
+
 
     static void closeCurrentEntityManager() {
-        EntityManager em = entityManager.get();
+        EntityManager em = singletonEmFactoryHolder.entityManager.get();
 
         if (null != em) {
-            em.close();
-            entityManager.remove();
+            if (em.isOpen())
+                em.close();
+            singletonEmFactoryHolder.entityManager.set(null);
         }
     }
 
-    static EntityManager openEntityManager() {
-        EntityManager em = getCurrentEntityManagerFactory().createEntityManager();
+    static EntityManager getCurrentEntityManager() {
+        EntityManager em = singletonEmFactoryHolder.entityManager.get();
 
-        if (null != entityManager.get())
-            throw new PersistenceException("An entity manager was already open when a new one was attempted (check your EM strategy and txn settings)");
-
-        entityManager.set(em);
+        //create if absent
+        if (null == em) {
+            em = getCurrentEntityManagerFactory().createEntityManager();
+            singletonEmFactoryHolder.entityManager.set(em);
+        }
 
         return em;
     }
@@ -85,5 +86,9 @@ class EntityManagerFactoryHolder {
 
     public int hashCode() {
         return (entityManagerFactory != null ? entityManagerFactory.hashCode() : 0);
+    }
+
+    public EntityManager getEntityManager() {
+        return getCurrentEntityManager();
     }
 }
