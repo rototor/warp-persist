@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.param,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.param td,table.param th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.param th {vertical-align:bottom}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.param td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.param tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing=0 cellpadding=0 class="param">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">code-monkey</td><td class="numi">7</td><td class="numi">7</td><td class="numi">0</td><td class="numi">0</td><td class="numi">2.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+</table>
+<a id="summary"></a>
+<table cellspacing=0 cellpadding=0 class="passed">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Time<br/>(Msecs)</th></tr>
+<tr><th colspan="4">code-monkey &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="3">com.wideplay.warp.hibernate.ManagedLocalTransactionsTest<td><a href="#m1">testSimpleTransaction</a></td><td class="numi">1</td><td class="numi">16</td></tr><tr class="passedodd"><td><a href="#m2">testSimpleTransactionRollbackOnChecked</a></td><td class="numi">1</td><td class="numi">0</td></tr><tr class="passedodd"><td><a href="#m3">testSimpleTransactionRollbackOnUnchecked</a></td><td class="numi">1</td><td class="numi">203</td></tr>
+<tr class="passedeven"><td rowspan="1">com.wideplay.warp.hibernate.ManualLocalTransactionsTest<td><a href="#m4">testSimpleCrossTxnWork</a></td><td class="numi">1</td><td class="numi">32</td></tr>
+<tr class="passedodd"><td rowspan="1">com.wideplay.warp.hibernate.SessionFactoryDuplicationAwareTest<td><a href="#m5">testSessionFactoryDuplicateAvoidance</a></td><td class="numi">1</td><td class="numi">62</td></tr>
+<tr class="passedeven"><td rowspan="1">com.wideplay.warp.hibernate.SessionFactoryProvisionTest<td><a href="#m6">testSessionCreateOnInjection</a></td><td class="numi">1</td><td class="numi">31</td></tr>
+<tr class="passedodd"><td rowspan="1">com.wideplay.warp.hibernate.SessionProvisionTest<td><a href="#m7">testSessionLifecyclePerTxn</a></td><td class="numi">1</td><td class="numi">0</td></tr>
+</table>
+<h1>code-monkey</h1>
+<a id="m1"></a><h2>com.wideplay.warp.hibernate.ManagedLocalTransactionsTest:testSimpleTransaction</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m2"></a><h2>com.wideplay.warp.hibernate.ManagedLocalTransactionsTest:testSimpleTransactionRollbackOnChecked</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m3"></a><h2>com.wideplay.warp.hibernate.ManagedLocalTransactionsTest:testSimpleTransactionRollbackOnUnchecked</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m4"></a><h2>com.wideplay.warp.hibernate.ManualLocalTransactionsTest:testSimpleCrossTxnWork</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m5"></a><h2>com.wideplay.warp.hibernate.SessionFactoryDuplicationAwareTest:testSessionFactoryDuplicateAvoidance</h2>
+<div style="padding-left:3em">
+<p>Duplicate session factory creation! Only one session factory is allowed per injector</p>
+com.wideplay.warp.hibernate.SessionFactoryHolder.setSessionFactory(SessionFactoryHolder.java:35)
+<br/>at com.wideplay.warp.hibernate.HibernatePersistenceService.start(HibernatePersistenceService.java:32)
+<br/>at com.wideplay.warp.hibernate.SessionFactoryDuplicationAwareTest.testSessionFactoryDuplicateAvoidance(SessionFactoryDuplicationAwareTest.java:50)
+<br/>27 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m6"></a><h2>com.wideplay.warp.hibernate.SessionFactoryProvisionTest:testSessionCreateOnInjection</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<a id="m7"></a><h2>com.wideplay.warp.hibernate.SessionProvisionTest:testSessionLifecyclePerTxn</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

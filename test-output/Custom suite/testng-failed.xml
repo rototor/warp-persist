@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" verbose="1" name="Failed suite [Custom suite]" junit="false" annotations="JDK">
+  <test name="code-monkey(failed)" junit="false" annotations="JDK">
+    <classes>
+      <class name="com.wideplay.warp.hibernate.ManualLocalTransactionsTest">
+        <methods>
+          <include name="testSimpleTransaction"/>
+          <include name="pre"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

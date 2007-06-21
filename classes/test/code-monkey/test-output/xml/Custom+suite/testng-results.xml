@@ -1,0 +1,14 @@
+<suite name="Custom suite">
+  <groups>
+  </groups>
+  <test name="code-monkey">
+    <class name="com.wideplay.warp.jpa.EntityManagerFactoryProvisionTest">
+      <test-method status="PASS" signature="post()" name="post" is-config="true" duration-ms="0" started-at="2007-06-20T22:07:48Z" finished-at="2007-06-20T22:07:48Z">
+      </test-method>
+      <test-method status="PASS" signature="testSessionCreateOnInjection()" name="testSessionCreateOnInjection" duration-ms="1734" started-at="2007-06-20T22:07:46Z" finished-at="2007-06-20T22:07:48Z">
+      </test-method>
+      <test-method status="PASS" signature="pre()" name="pre" is-config="true" duration-ms="282" started-at="2007-06-20T22:07:46Z" finished-at="2007-06-20T22:07:46Z">
+      </test-method>
+    </class>
+  </test>
+</suite>
