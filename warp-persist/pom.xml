@@ -53,10 +53,22 @@
     </build>
 
     <dependencies>
+	    <!--
         <dependency>
             <groupId>com.wideplay</groupId>
             <artifactId>warp-core</artifactId>
             <version>${version}</version>
+        </dependency>
+-->
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>4.0-beta4</version>
+        </dependency>
+        <dependency>
+	    <groupId>com.google.inject.extensions</groupId>
+	    <artifactId>guice-servlet</artifactId>
+	    <version>4.0-beta4</version>
         </dependency>
 
         <dependency>
@@ -66,19 +78,11 @@
             <scope>provided</scope>
         </dependency>
 
-        <dependency>
-            <groupId>com.db4o</groupId>
-            <artifactId>db4o</artifactId>
-            <version>6.4.14.8131</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/db4o-6.4.14.8131-java5.jar</systemPath>
-        </dependency>
 
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate</artifactId>
             <version>3.2.6.ga</version>
-            <scope>provided</scope>
             <exclusions>
                 <exclusion>
                     <groupId>javax.transaction</groupId>
@@ -90,19 +94,11 @@
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-annotations</artifactId>
             <version>3.4.0.GA</version>
-            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-entitymanager</artifactId>
             <version>3.3.2.GA</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>aopalliance</groupId>
-            <artifactId>aopalliance</artifactId>
-            <version>1.0</version>
         </dependency>
 
     </dependencies>
