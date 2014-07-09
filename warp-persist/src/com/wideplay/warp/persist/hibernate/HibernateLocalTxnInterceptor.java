@@ -159,7 +159,8 @@ class HibernateLocalTxnInterceptor implements MethodInterceptor {
         return commit;
     }
 
-    public String toString() {
+    @Override
+	public String toString() {
         return String.format("%s[session: %s]",super.toString(), this.sessionProvider);
     }
 }

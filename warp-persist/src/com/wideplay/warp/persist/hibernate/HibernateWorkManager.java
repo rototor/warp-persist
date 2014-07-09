@@ -74,7 +74,8 @@ class HibernateWorkManager implements WorkManager {
         }
     }
 
-    public String toString() {
+    @Override
+	public String toString() {
         return String.format("%s[boundTo: %s, unitOfWork: %s]",super.toString(),
                              this.annotationDebugString, this.unitOfWork);
     }

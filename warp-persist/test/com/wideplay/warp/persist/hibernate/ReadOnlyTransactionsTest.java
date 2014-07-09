@@ -47,7 +47,8 @@ public class ReadOnlyTransactionsTest {
             .forAll(Matchers.any())
             .buildModule(),
                 new AbstractModule() {
-                    protected void configure() {
+                    @Override
+					protected void configure() {
                         bind(Configuration.class).toInstance(new AnnotationConfiguration()
                             .addAnnotatedClass(ReadOnlyTransactionalObject.class)
                             .setProperties(Initializer.loadProperties("spt-persistence.properties")));

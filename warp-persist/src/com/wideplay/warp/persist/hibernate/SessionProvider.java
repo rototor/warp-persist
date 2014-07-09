@@ -39,7 +39,8 @@ class SessionProvider implements Provider<Session> {
         return factory.get().getCurrentSession();
     }
 
-    public String toString() {
+    @Override
+	public String toString() {
         return String.format("%s[sessionFactory: %s]", super.toString(), this.factory);
     }
 }

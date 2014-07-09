@@ -30,7 +30,8 @@ import java.util.List;
  * @author Robbie Vanbrabant
  */
 public final class PersistenceServiceExtrasModule extends AbstractModule {
-    protected void configure() {
+    @Override
+	protected void configure() {
         bind(new TypeLiteral<List<PersistenceService>>(){}).toProvider(ListOfPersistenceServicesProvider.class);
     }
 

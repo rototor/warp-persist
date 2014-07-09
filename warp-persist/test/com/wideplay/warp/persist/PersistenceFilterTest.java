@@ -83,7 +83,8 @@ public class PersistenceFilterTest {
         PersistenceFilter spr = new PersistenceFilter();
         final ValidatableWorkManager workManager1 = new ValidatableWorkManager();
         final ValidatableWorkManager workManager2 = new ValidatableWorkManager() {
-            public void beginWork() {
+            @Override
+			public void beginWork() {
                 beginCalled = true;
                 throw new RuntimeException();
             }
@@ -115,7 +116,8 @@ public class PersistenceFilterTest {
         PersistenceFilter spr = new PersistenceFilter();
         final ValidatableWorkManager workManager1 = new ValidatableWorkManager();
         final ValidatableWorkManager workManager2 = new ValidatableWorkManager() {
-            public void endWork() {
+            @Override
+			public void endWork() {
                 endCalled = true;
                 throw new RuntimeException("eep");
             }
@@ -149,13 +151,15 @@ public class PersistenceFilterTest {
     public final void testWorkManagerBeginAndEndThrowException() throws IOException, ServletException {
         PersistenceFilter spr = new PersistenceFilter();
         final ValidatableWorkManager workManager1 = new ValidatableWorkManager() {
-            public void endWork() {
+            @Override
+			public void endWork() {
                 endCalled = true;
                 throw new RuntimeException("eep");
             }
         };
         final ValidatableWorkManager workManager2 = new ValidatableWorkManager() {
-            public void beginWork() {
+            @Override
+			public void beginWork() {
                 beginCalled = true;
                 throw new RuntimeException();
             }
@@ -188,7 +192,8 @@ public class PersistenceFilterTest {
                 .forAll(Matchers.any())
                 .buildModule(),
                 new AbstractModule() {
-                    protected void configure() {
+                    @Override
+					protected void configure() {
                         bind(Configuration.class).toInstance(new AnnotationConfiguration()
                                 .addAnnotatedClass(HibernateTestEntity.class)
                                 .setProperties(Initializer.loadProperties("spt-persistence.properties")));

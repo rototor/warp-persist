@@ -53,7 +53,8 @@ public class SessionProvisionTest {
             .buildModule(),
                 new AbstractModule() {
 
-                    protected void configure() {
+                    @Override
+					protected void configure() {
                         bind(Configuration.class).toInstance(new AnnotationConfiguration()
                             .addAnnotatedClass(HibernateTestEntity.class)
                             .setProperties(Initializer.loadProperties("spt-persistence.properties")));

@@ -93,7 +93,8 @@ public class HibernatePersistenceStrategy implements PersistenceStrategy {
             if (inMultiModulesMode()) {
                 if (configuration != null) {
                     scheduledBindings.add(new AbstractModule() {
-                        protected void configure() {
+                        @Override
+						protected void configure() {
                             bind(key).toInstance(configuration);
                         }
                     });

@@ -38,14 +38,16 @@ class HibernatePersistenceService extends PersistenceService {
         this.sessionFactoryProvider = sessionFactoryProvider;
     }
 
-    public void start() {
+    @Override
+	public void start() {
         // the provider lazily loads, force start.
         // does its own synchronization and simply returns
         // a closed SessionFactory if it has been closed.
         sessionFactoryProvider.get();
     }
 
-    public synchronized void shutdown() {
+    @Override
+	public synchronized void shutdown() {
         // Hibernate silently lets this call pass
         // if the SessionFactory has been closed already,
         // but a SessionFactory is not thread safe,
@@ -54,7 +56,8 @@ class HibernatePersistenceService extends PersistenceService {
         sessionFactoryProvider.get().close();
     }
 
-    public String toString() {
+    @Override
+	public String toString() {
         return String.format("%s[sessionFactory: %s]",super.toString(), this.sessionFactoryProvider);
     }
 }

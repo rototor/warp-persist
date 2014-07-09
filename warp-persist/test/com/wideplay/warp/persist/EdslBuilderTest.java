@@ -58,7 +58,8 @@ public class EdslBuilderTest {
         Injector injector = Guice.createInjector(PersistenceService.usingHibernate().across(UnitOfWork.TRANSACTION)
                 .buildModule(),
                 new AbstractModule() {
-                    protected void configure() {
+                    @Override
+					protected void configure() {
                         bind(Configuration.class).toInstance(new AnnotationConfiguration().addAnnotatedClass(HibernateTestEntity.class)
                                 .setProperties(Initializer.loadProperties("spt-persistence.properties")));
                     }

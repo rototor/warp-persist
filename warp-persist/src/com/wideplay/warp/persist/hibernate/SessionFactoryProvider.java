@@ -70,7 +70,8 @@ class SessionFactoryProvider implements Provider<SessionFactory> {
         return sessionFactory.get();
     }
 
-    public String toString() {
+    @Override
+	public String toString() {
         return String.format("%s[boundTo: %s]", super.toString(), this.annotationDebug);
     }
 }

@@ -69,7 +69,8 @@ public abstract class AbstractPersistenceModule extends AbstractModule implement
      * To be implemented by subclasses.
      * @see com.google.inject.AbstractModule#configure()
      */
-    protected abstract void configure();
+    @Override
+	protected abstract void configure();
 
     /**
      * Bind with an optional unit annotation type, which is a binding annotation used only
