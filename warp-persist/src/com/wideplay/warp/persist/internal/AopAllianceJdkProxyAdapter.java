@@ -17,11 +17,10 @@
 package com.wideplay.warp.persist.internal;
 
 import java.lang.reflect.AccessibleObject;
+import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
 import javax.annotation.concurrent.Immutable;
-
-import net.sf.cglib.proxy.InvocationHandler;
 
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;

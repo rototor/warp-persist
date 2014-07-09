@@ -15,18 +15,16 @@
  */
 package com.wideplay.warp.persist.spi;
 
-import com.wideplay.warp.persist.internal.AopAllianceCglibAdapter;
-import com.wideplay.warp.persist.internal.AopAllianceJdkProxyAdapter;
-import com.wideplay.warp.persist.internal.WarpPersistNamingPolicy;
-import net.sf.cglib.proxy.Enhancer;
-import net.sf.cglib.proxy.Proxy;
+import java.lang.reflect.AccessibleObject;
+import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
+
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
 
-import java.lang.reflect.AccessibleObject;
-import java.lang.reflect.Method;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
+import com.wideplay.warp.persist.internal.AopAllianceJdkProxyAdapter;
 
 /**
  * Factory methods that help enable Warp Persist's Dynamic Finder features.
@@ -59,12 +57,15 @@ public class DynamicFinders {
      */
     public static Object newDynamicFinder(Class<?> accessor,
                                             MethodInterceptor finderInterceptor) {
-        Enhancer enhancer = new Enhancer();
+    	/*
+        Enhancer enhancer = new Enhancer(task);
         enhancer.setNamingPolicy(new WarpPersistNamingPolicy());
         enhancer.setCallback(new AopAllianceCglibAdapter(finderInterceptor));
         enhancer.setSuperclass(accessor);
         
         return enhancer.create();
+        */
+    	throw new IllegalAccessError("Not implemented");
     }
 
     /**

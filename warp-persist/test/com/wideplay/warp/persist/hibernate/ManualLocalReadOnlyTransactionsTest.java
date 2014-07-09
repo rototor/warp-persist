@@ -16,6 +16,21 @@
 
 package com.wideplay.warp.persist.hibernate;
 
+import static com.wideplay.warp.persist.TransactionType.READ_ONLY;
+import static com.wideplay.warp.persist.TransactionType.READ_WRITE;
+
+import java.util.Date;
+
+import org.hibernate.Query;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.AnnotationConfiguration;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.context.internal.ManagedSessionContext;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
 import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
 import com.google.inject.Inject;
@@ -23,21 +38,8 @@ import com.google.inject.Injector;
 import com.google.inject.matcher.Matchers;
 import com.wideplay.codemonkey.web.startup.Initializer;
 import com.wideplay.warp.persist.PersistenceService;
-import static com.wideplay.warp.persist.TransactionType.READ_ONLY;
-import static com.wideplay.warp.persist.TransactionType.READ_WRITE;
 import com.wideplay.warp.persist.Transactional;
 import com.wideplay.warp.persist.UnitOfWork;
-import org.hibernate.Query;
-import org.hibernate.SessionFactory;
-import org.hibernate.cfg.AnnotationConfiguration;
-import org.hibernate.cfg.Configuration;
-import org.hibernate.classic.Session;
-import org.hibernate.context.ManagedSessionContext;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
-
-import java.util.Date;
 
 /**
  * Created with IntelliJ IDEA.

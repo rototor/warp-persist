@@ -16,6 +16,18 @@
 
 package com.wideplay.warp.persist.hibernate;
 
+import java.util.Date;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.AnnotationConfiguration;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.context.internal.ManagedSessionContext;
+import org.hibernate.criterion.Expression;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
 import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
 import com.google.inject.Inject;
@@ -24,17 +36,6 @@ import com.google.inject.matcher.Matchers;
 import com.wideplay.codemonkey.web.startup.Initializer;
 import com.wideplay.warp.persist.PersistenceService;
 import com.wideplay.warp.persist.UnitOfWork;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.cfg.AnnotationConfiguration;
-import org.hibernate.cfg.Configuration;
-import org.hibernate.context.ManagedSessionContext;
-import org.hibernate.criterion.Expression;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
-
-import java.util.Date;
 
 /**
  * Created with IntelliJ IDEA.
@@ -81,7 +82,7 @@ public class ManualLocalTransactionsWithCustomMatchersTest {
 
     @Test
     public void testSimpleCrossTxnWork() {
-        org.hibernate.classic.Session session1 = injector.getInstance(SessionFactory.class).openSession();
+        Session session1 = injector.getInstance(SessionFactory.class).openSession();
         ManagedSessionContext.bind(session1);
         HibernateTestEntity entity = injector.getInstance(ManualLocalTransactionsWithCustomMatchersTest.TransactionalObject.class).runOperationInTxn();
         injector.getInstance(ManualLocalTransactionsWithCustomMatchersTest.TransactionalObject.class).runOperationInTxn2();
