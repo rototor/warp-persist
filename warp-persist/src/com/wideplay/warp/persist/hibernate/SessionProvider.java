@@ -16,10 +16,12 @@
 
 package com.wideplay.warp.persist.hibernate;
 
-import com.google.inject.Provider;
-import net.jcip.annotations.Immutable;
+import javax.annotation.concurrent.Immutable;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+
+import com.google.inject.Provider;
 
 /**
  * @author Dhanji R. Prasanna (dhanji@gmail.com)

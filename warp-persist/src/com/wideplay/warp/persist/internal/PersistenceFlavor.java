@@ -15,11 +15,8 @@
  */
 package com.wideplay.warp.persist.internal;
 
-import com.wideplay.warp.persist.db4o.Db4oPersistenceStrategy;
-import com.wideplay.warp.persist.hibernate.HibernatePersistenceStrategy;
-import com.wideplay.warp.persist.jpa.JpaPersistenceStrategy;
 import com.wideplay.warp.persist.PersistenceStrategy;
-import com.wideplay.warp.persist.internal.HasPersistenceStrategy;
+import com.wideplay.warp.persist.hibernate.HibernatePersistenceStrategy;
 
 /**
  * Enumerates the persistence engines we support out-of-the-box.
@@ -29,17 +26,6 @@ public enum PersistenceFlavor implements HasPersistenceStrategy {
     HIBERNATE {
         public PersistenceStrategy getPersistenceStrategy() {
             return HibernatePersistenceStrategy.builder().build();
-        }
-    },
-    JPA {
-        public PersistenceStrategy getPersistenceStrategy() {
-            // 1.0 compatibility mode
-            return JpaPersistenceStrategy.builder().build();
-        }
-    },
-    DB4O {
-        public PersistenceStrategy getPersistenceStrategy() {
-            return Db4oPersistenceStrategy.builder().build();
         }
     }
 }

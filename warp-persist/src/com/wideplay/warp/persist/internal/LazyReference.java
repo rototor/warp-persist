@@ -15,8 +15,9 @@
  */
 package com.wideplay.warp.persist.internal;
 
+import javax.annotation.concurrent.ThreadSafe;
+
 import com.google.inject.Provider;
-import net.jcip.annotations.ThreadSafe;
 
 /**
  * Utility to lazily load an object reference.

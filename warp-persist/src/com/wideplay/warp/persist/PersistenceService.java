@@ -73,29 +73,6 @@ public abstract class PersistenceService {
         return new PersistenceServiceBuilderImpl(PersistenceFlavor.HIBERNATE, persistenceModuleVisitor);
     }
 
-
-    /**
-     * A factory for warp-persist using JPA in your Guice module. See http://www.wideplay.com
-     * for proper documentation on the EDSL. Any compliant implementation of JPA is supported (in theory).
-     * Currently, TopLink, Hibernate and OpenJPA have shown positive results.
-     *
-     * @return Returns the next step in the configuration chain.
-     */
-    public static SessionStrategyBuilder usingJpa() {
-        return new PersistenceServiceBuilderImpl(PersistenceFlavor.JPA, persistenceModuleVisitor);
-    }
-
-    /**
-     * A factory for warp-persist using Db4o in your Guice module. See http://www.wideplay.com
-     * for proper documentation on the EDSL. Note that Db4o has slightly different semantics
-     * than ORM frameworks like Hibernate and JPA. Consult the documentation carefully.
-     *
-     * @return Returns the next step in the configuration chain.
-     */
-    public static SessionStrategyBuilder usingDb4o() {
-        return new PersistenceServiceBuilderImpl(PersistenceFlavor.DB4O, persistenceModuleVisitor);
-    }
-
     /**
      * Configure a given {@link PersistenceStrategy}, either
      * because it is not part of Warp Persist, or because you need support for multiple

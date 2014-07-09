@@ -16,21 +16,23 @@
 
 package com.wideplay.warp.persist;
 
-import com.db4o.Db4o;
-import com.google.inject.*;
-import com.google.inject.matcher.Matchers;
-import com.wideplay.codemonkey.web.startup.Initializer;
-import com.wideplay.warp.persist.dao.HibernateTestAccessor;
-import com.wideplay.warp.persist.db4o.Db4oPersistenceStrategy;
-import com.wideplay.warp.persist.hibernate.HibernatePersistenceStrategy;
-import com.wideplay.warp.persist.hibernate.HibernateTestEntity;
-import com.wideplay.warp.persist.jpa.JpaPersistenceStrategy;
+import java.util.List;
+
 import org.hibernate.cfg.AnnotationConfiguration;
 import org.hibernate.cfg.Configuration;
 import org.testng.annotations.Test;
 
-import java.util.List;
-import java.util.Properties;
+import com.google.inject.AbstractModule;
+import com.google.inject.Guice;
+import com.google.inject.Injector;
+import com.google.inject.Key;
+import com.google.inject.Module;
+import com.google.inject.TypeLiteral;
+import com.google.inject.matcher.Matchers;
+import com.wideplay.codemonkey.web.startup.Initializer;
+import com.wideplay.warp.persist.dao.HibernateTestAccessor;
+import com.wideplay.warp.persist.hibernate.HibernatePersistenceStrategy;
+import com.wideplay.warp.persist.hibernate.HibernateTestEntity;
 
 /**
  * Created with IntelliJ IDEA.
@@ -67,20 +69,6 @@ public class EdslBuilderTest {
         injector.getInstance(TransactionalObject.class).txnMethod();
     }
 
-    @Test
-    public final void testMultimodulesConfigJpa() {
-        PersistenceStrategy jpa = JpaPersistenceStrategy.builder()
-                .properties(new Properties())
-                .unit("myUnit")
-                .annotatedWith(MyUnit.class).build();
-        Module m = PersistenceService.using(jpa)
-                .across(UnitOfWork.TRANSACTION)
-
-                .forAll(Matchers.any(), Matchers.annotatedWith(Transactional.class))
-                .buildModule();
-
-        Guice.createInjector(m);
-    }
 
     @Test
     public final void testMultimodulesConfigHibernate() {
@@ -107,17 +95,8 @@ public class EdslBuilderTest {
                 .forAll(Matchers.any(), Matchers.annotatedWith(Transactional.class))
                 .buildModule();
 
-        PersistenceStrategy jpa = JpaPersistenceStrategy.builder()
-                .properties(new Properties())
-                .unit("myUnit")
-                .annotatedWith(MySecondUnit.class).build();
-        Module jpaModule = PersistenceService.using(jpa)
-                .across(UnitOfWork.TRANSACTION)
 
-                .forAll(Matchers.any(), Matchers.annotatedWith(Transactional.class))
-                .buildModule();
-
-        List<PersistenceService> persistenceServices = Guice.createInjector(hibernateModule, jpaModule,
+        List<PersistenceService> persistenceServices = Guice.createInjector(hibernateModule, 
                 new PersistenceServiceExtrasModule())
                 .getInstance(Key.get(new TypeLiteral<List<PersistenceService>>() {
                 }));
@@ -125,21 +104,6 @@ public class EdslBuilderTest {
         assert persistenceServices.size() == 2;
     }
 
-    @Test
-    public final void testMultimodulesConfigDb4o() {
-        PersistenceStrategy h = Db4oPersistenceStrategy.builder()
-                .configuration(Db4o.newConfiguration())
-                .annotatedWith(MyUnit.class)//.databaseFileName("TestDatabase.data")
-                .host("localhost").port(4321).user("autobot").password("morethanmeetstheeye")
-                .build();
-        Module m = PersistenceService.using(h)
-                .across(UnitOfWork.TRANSACTION)
-                .forAll(Matchers.any(), Matchers.annotatedWith(Transactional.class))
-                .buildModule();
-        PersistenceService service = Guice.createInjector(m).getInstance(Key.get(PersistenceService.class, MyUnit.class));
-        service.start();
-        service.shutdown();
-    }
 
     static class TransactionalObject {
         @Transactional

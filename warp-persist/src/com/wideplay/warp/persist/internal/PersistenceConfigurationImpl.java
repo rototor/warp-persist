@@ -15,14 +15,19 @@
  */
 package com.wideplay.warp.persist.internal;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
+
+import javax.annotation.concurrent.Immutable;
+import javax.annotation.concurrent.ThreadSafe;
+
 import com.wideplay.warp.persist.Defaults;
 import com.wideplay.warp.persist.UnitOfWork;
 import com.wideplay.warp.persist.spi.ClassAndMethodMatcher;
 import com.wideplay.warp.persist.spi.PersistenceConfiguration;
-import net.jcip.annotations.Immutable;
-import net.jcip.annotations.ThreadSafe;
-
-import java.util.*;
 
 /**
  * Value object that indicates how a persistence service should be configured.

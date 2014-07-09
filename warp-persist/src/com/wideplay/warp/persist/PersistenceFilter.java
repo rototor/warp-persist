@@ -16,21 +16,27 @@
 
 package com.wideplay.warp.persist;
 
-import com.google.inject.Singleton;
-import com.wideplay.warp.persist.internal.ExceptionalRunnable;
-import com.wideplay.warp.persist.internal.Lifecycle;
-import com.wideplay.warp.persist.internal.LifecycleAdapter;
-import com.wideplay.warp.persist.internal.Lifecycles;
-import net.jcip.annotations.GuardedBy;
-import net.jcip.annotations.ThreadSafe;
-
-import javax.servlet.*;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
+
+import javax.annotation.concurrent.GuardedBy;
+import javax.annotation.concurrent.ThreadSafe;
+import javax.servlet.Filter;
+import javax.servlet.FilterChain;
+import javax.servlet.FilterConfig;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+
+import com.google.inject.Singleton;
+import com.wideplay.warp.persist.internal.ExceptionalRunnable;
+import com.wideplay.warp.persist.internal.Lifecycle;
+import com.wideplay.warp.persist.internal.LifecycleAdapter;
+import com.wideplay.warp.persist.internal.Lifecycles;
 
 /**
  * Apply this filter to enable the HTTP Request unit of work and to have Warp Persist manage the lifecycle of

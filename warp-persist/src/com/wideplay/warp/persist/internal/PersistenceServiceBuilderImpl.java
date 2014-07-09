@@ -16,14 +16,19 @@
 
 package com.wideplay.warp.persist.internal;
 
+import java.lang.reflect.Method;
+
+import javax.annotation.concurrent.NotThreadSafe;
+
 import com.google.inject.Module;
 import com.google.inject.matcher.Matcher;
-import com.wideplay.warp.persist.*;
+import com.wideplay.warp.persist.PersistenceModuleBuilder;
+import com.wideplay.warp.persist.PersistenceStrategy;
+import com.wideplay.warp.persist.SessionStrategyBuilder;
+import com.wideplay.warp.persist.TransactionStrategyBuilder;
+import com.wideplay.warp.persist.UnitOfWork;
 import com.wideplay.warp.persist.spi.PersistenceModule;
 import com.wideplay.warp.persist.spi.PersistenceModuleVisitor;
-import net.jcip.annotations.NotThreadSafe;
-
-import java.lang.reflect.Method;
 
 /**
  * Configures and builds a Module for use in a Guice injector to enable the PersistenceService.

@@ -16,17 +16,19 @@
 
 package com.wideplay.warp.persist.hibernate;
 
-import com.google.inject.Provider;
-import com.wideplay.warp.persist.TransactionType;
-import com.wideplay.warp.persist.Transactional;
-import net.jcip.annotations.ThreadSafe;
+import java.lang.reflect.Method;
+
+import javax.annotation.concurrent.ThreadSafe;
+
 import org.aopalliance.intercept.MethodInterceptor;
 import org.aopalliance.intercept.MethodInvocation;
 import org.hibernate.FlushMode;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import java.lang.reflect.Method;
+import com.google.inject.Provider;
+import com.wideplay.warp.persist.TransactionType;
+import com.wideplay.warp.persist.Transactional;
 
 /**
  * @author Dhanji R. Prasanna (dhanji@gmail.com)

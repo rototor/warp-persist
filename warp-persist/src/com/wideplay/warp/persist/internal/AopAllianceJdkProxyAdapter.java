@@ -16,13 +16,15 @@
 
 package com.wideplay.warp.persist.internal;
 
-import net.jcip.annotations.Immutable;
-import net.sf.cglib.proxy.InvocationHandler;
-import org.aopalliance.intercept.MethodInterceptor;
-import org.aopalliance.intercept.MethodInvocation;
-
 import java.lang.reflect.AccessibleObject;
 import java.lang.reflect.Method;
+
+import javax.annotation.concurrent.Immutable;
+
+import net.sf.cglib.proxy.InvocationHandler;
+
+import org.aopalliance.intercept.MethodInterceptor;
+import org.aopalliance.intercept.MethodInvocation;
 
 /**
  * <p>

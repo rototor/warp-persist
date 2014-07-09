@@ -16,17 +16,6 @@
 
 package com.wideplay.warp.persist.hibernate;
 
-import com.google.inject.Provider;
-import com.google.inject.name.Named;
-import com.wideplay.warp.persist.dao.Finder;
-import com.wideplay.warp.persist.dao.FirstResult;
-import com.wideplay.warp.persist.dao.MaxResults;
-import net.jcip.annotations.ThreadSafe;
-import org.aopalliance.intercept.MethodInterceptor;
-import org.aopalliance.intercept.MethodInvocation;
-import org.hibernate.Query;
-import org.hibernate.Session;
-
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -35,6 +24,19 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+
+import javax.annotation.concurrent.ThreadSafe;
+
+import org.aopalliance.intercept.MethodInterceptor;
+import org.aopalliance.intercept.MethodInvocation;
+import org.hibernate.Query;
+import org.hibernate.Session;
+
+import com.google.inject.Provider;
+import com.google.inject.name.Named;
+import com.wideplay.warp.persist.dao.Finder;
+import com.wideplay.warp.persist.dao.FirstResult;
+import com.wideplay.warp.persist.dao.MaxResults;
 
 /**
  * @author Dhanji R. Prasanna (dhanji@gmail.com)
