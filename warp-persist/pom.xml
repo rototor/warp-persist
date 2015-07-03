@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.wideplay</groupId>
     <artifactId>warp-persist</artifactId>
-    <version>2.1-rototor2</version>
+    <version>2.1-rototor3</version>
     <packaging>jar</packaging>
     <name>${groupId}:${artifactId}:${packaging}:${version}</name>
     <build>
@@ -75,7 +75,7 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>3.6.6.Final</version>
+            <version>3.6.10.Final</version>
             <exclusions>
                 <exclusion>
                     <groupId>javax.transaction</groupId>
@@ -86,12 +86,12 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-annotations</artifactId>
-            <version>3.4.0.GA</version>
+            <version>3.5.6-Final</version>
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-entitymanager</artifactId>
-            <version>3.3.2.GA</version>
+            <version>3.6.10.Final</version>
         </dependency>
 		<dependency>
 			<groupId>com.google.code.findbugs</groupId>
