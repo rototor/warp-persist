@@ -22,6 +22,7 @@ import com.wideplay.warp.persist.dao.Finder;
 import com.wideplay.warp.persist.Transactional;
 
 import java.lang.reflect.AnnotatedElement;
+import java.lang.reflect.Method;
 
 /**
  * Custom internal matchers.
@@ -46,6 +47,10 @@ public class InternalPersistenceMatchers {
     public static Matcher<AnnotatedElement> finderWithUnit(final Class<?> annotation) {
         return new AbstractMatcher<AnnotatedElement>() {
             public boolean matches(AnnotatedElement annotatedElement) {
+                if( annotatedElement instanceof Method) {
+                    if( ((Method) annotatedElement).isSynthetic() )
+                        return false;
+                }
                 return annotatedWith(Finder.class).matches(annotatedElement) &&
                        annotatedElement.getAnnotation(Finder.class).unit() == annotation;
             }
