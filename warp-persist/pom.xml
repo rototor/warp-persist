@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.wideplay</groupId>
     <artifactId>warp-persist</artifactId>
-    <version>2.1-rototor1</version>
+    <version>2.1-rototor2</version>
     <packaging>jar</packaging>
     <name>${groupId}:${artifactId}:${packaging}:${version}</name>
     <build>
@@ -56,12 +56,12 @@
         <dependency>
             <groupId>com.google.inject</groupId>
             <artifactId>guice</artifactId>
-            <version>4.0-beta4</version>
+            <version>4.0</version>
         </dependency>
         <dependency>
 	    <groupId>com.google.inject.extensions</groupId>
 	    <artifactId>guice-servlet</artifactId>
-	    <version>4.0-beta4</version>
+	    <version>4.0</version>
         </dependency>
 
         <dependency>
@@ -74,8 +74,8 @@
 
         <dependency>
             <groupId>org.hibernate</groupId>
-            <artifactId>hibernate</artifactId>
-            <version>3.2.6.ga</version>
+            <artifactId>hibernate-core</artifactId>
+            <version>3.6.6.Final</version>
             <exclusions>
                 <exclusion>
                     <groupId>javax.transaction</groupId>
