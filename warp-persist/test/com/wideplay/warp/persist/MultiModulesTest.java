@@ -16,6 +16,7 @@
 package com.wideplay.warp.persist;
 
 import com.google.inject.*;
+import com.google.inject.Module;
 import com.wideplay.codemonkey.web.startup.Initializer;
 import com.wideplay.warp.persist.dao.Finder;
 import com.wideplay.warp.persist.hibernate.HibernatePersistenceStrategy;
