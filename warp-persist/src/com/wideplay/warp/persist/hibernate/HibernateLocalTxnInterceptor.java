@@ -81,6 +81,8 @@ class HibernateLocalTxnInterceptor implements MethodInterceptor {
             //everything was normal so commit the txn (do not move into try block as it interferes with the advised method's throwing semantics)
             Exception commitException = null;
             try {
+   	    	// We explicit flush the session before commit. This seems not to happen always ...
+		session.flush();
                 txn.commit();
             } catch(RuntimeException re) {
                 txn.rollback();
