@@ -87,7 +87,7 @@ public class ManualLocalReadOnlyTransactionsTest {
         Session session1 = injector.getInstance(SessionFactory.class).openSession();
         ManagedSessionContext.bind(session1);
         final TransactionalObject txnal = injector.getInstance(TransactionalObject.class);
-        final HibernateTestEntity entity = txnal.runOperationInTxn();
+        HibernateTestEntity entity = txnal.runOperationInTxn();
 
         //save the id
         txnal.id = entity.getId();
@@ -110,16 +110,18 @@ public class ManualLocalReadOnlyTransactionsTest {
         assert null != query.uniqueResult() : "Read-only txn affected persistent store!";
 
 
-
         //run read-write txn
         txnal.runReadWriteTxn();
+        assert null == query.uniqueResult() : "Read-only txn affected persistent store!";
+
+        //query.setParameter("text",UNIQUE_TEXT_PERSISTENT2);
+        //entity = (HibernateTestEntity) query.uniqueResult();
 
         assert UNIQUE_TEXT_PERSISTENT2.equals(entity.getText()) : "entity was not modified in read-write txn!!";
         query = session1.createQuery("from HibernateTestEntity where text = :text");
         query.setParameter("text", UNIQUE_TEXT_PERSISTENT);
 
         assert null == query.uniqueResult() : "Text from original txn was found in persistent store!";
-
 
 
 

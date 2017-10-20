@@ -69,7 +69,7 @@ public class EdslBuilderTest {
 		PersistenceStrategy h = HibernatePersistenceStrategy.builder()
 				.configuration(new Configuration())
 				.annotatedWith(MyUnit.class).build();
-		Module m = PersistenceService.using(h)
+		com.google.inject.Module m = PersistenceService.using(h)
 				.across(UnitOfWork.TRANSACTION)
 
 				.forAll(Matchers.any(), Matchers.annotatedWith(Transactional.class))
@@ -83,7 +83,7 @@ public class EdslBuilderTest {
 		PersistenceStrategy h = HibernatePersistenceStrategy.builder()
 				.configuration(new Configuration())
 				.annotatedWith(MyUnit.class).build();
-		Module hibernateModule = PersistenceService.using(h)
+		com.google.inject.Module hibernateModule = PersistenceService.using(h)
 				.across(UnitOfWork.TRANSACTION)
 
 				.forAll(Matchers.any(), Matchers.annotatedWith(Transactional.class))
