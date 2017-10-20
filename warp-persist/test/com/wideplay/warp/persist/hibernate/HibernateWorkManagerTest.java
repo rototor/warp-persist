@@ -26,7 +26,7 @@ import com.wideplay.warp.persist.*;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.cfg.AnnotationConfiguration;
+import org.hibernate.cfg.Configuration;
 import org.hibernate.cfg.Configuration;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -57,7 +57,7 @@ public class HibernateWorkManagerTest {
 
                     @Override
 					protected void configure() {
-                        bind(Configuration.class).toInstance(new AnnotationConfiguration()
+                        bind(Configuration.class).toInstance(new Configuration()
                             .addAnnotatedClass(HibernateTestEntity.class)
                             .setProperties(Initializer.loadProperties("spt-persistence.properties")));
                     }

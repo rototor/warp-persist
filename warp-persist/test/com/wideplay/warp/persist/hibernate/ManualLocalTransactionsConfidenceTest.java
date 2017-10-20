@@ -25,15 +25,14 @@ import com.wideplay.codemonkey.web.startup.Initializer;
 import com.wideplay.warp.persist.PersistenceService;
 import com.wideplay.warp.persist.Transactional;
 import com.wideplay.warp.persist.UnitOfWork;
-import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.cfg.AnnotationConfiguration;
 import org.hibernate.cfg.Configuration;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import javax.persistence.PersistenceException;
 import java.util.Date;
 
 /**
@@ -58,7 +57,7 @@ public class ManualLocalTransactionsConfidenceTest {
 
                     @Override
 					protected void configure() {
-                        bind(Configuration.class).toInstance(new AnnotationConfiguration()
+                        bind(Configuration.class).toInstance(new Configuration()
                             .addAnnotatedClass(HibernateTestEntity.class)
                             .addAnnotatedClass(HibernateParentTestEntity.class)
                             .setProperties(Initializer.loadProperties("spt-persistence.properties")));
@@ -87,7 +86,7 @@ public class ManualLocalTransactionsConfidenceTest {
         }
 
         assert null != e : "No exception was thrown!";
-        assert e instanceof HibernateException : "Exception thrown was not what was expected (i.e. commit-time)";
+        assert e instanceof PersistenceException: "Exception thrown was not what was expected (i.e. commit-time)";
         assert !injector.getInstance(Session.class).getTransaction().isActive() : "Session was open when it should have been closed on roll back";
     }
 

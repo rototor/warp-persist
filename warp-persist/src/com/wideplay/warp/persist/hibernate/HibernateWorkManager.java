@@ -16,15 +16,14 @@
 
 package com.wideplay.warp.persist.hibernate;
 
-import javax.annotation.concurrent.Immutable;
-import javax.annotation.concurrent.ThreadSafe;
-
-import org.hibernate.SessionFactory;
-import org.hibernate.context.ManagedSessionContext;
-
 import com.google.inject.Provider;
 import com.wideplay.warp.persist.UnitOfWork;
 import com.wideplay.warp.persist.WorkManager;
+import org.hibernate.SessionFactory;
+import org.hibernate.context.internal.ManagedSessionContext;
+
+import javax.annotation.concurrent.Immutable;
+import javax.annotation.concurrent.ThreadSafe;
 
 /**
  * @author Dhanji R. Prasanna (dhanji gmail com)

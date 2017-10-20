@@ -22,17 +22,17 @@ import com.google.inject.Injector;
 import com.google.inject.matcher.Matchers;
 import com.wideplay.codemonkey.web.startup.Initializer;
 import com.wideplay.warp.persist.PersistenceService;
-import static com.wideplay.warp.persist.TransactionType.READ_ONLY;
 import com.wideplay.warp.persist.Transactional;
 import com.wideplay.warp.persist.UnitOfWork;
 import org.hibernate.FlushMode;
 import org.hibernate.Session;
-import org.hibernate.cfg.AnnotationConfiguration;
 import org.hibernate.cfg.Configuration;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import static com.wideplay.warp.persist.TransactionType.READ_ONLY;
 
 /**
  * @author Robbie Vanbrabant
@@ -49,7 +49,7 @@ public class ReadOnlyTransactionsTest {
                 new AbstractModule() {
                     @Override
 					protected void configure() {
-                        bind(Configuration.class).toInstance(new AnnotationConfiguration()
+                        bind(Configuration.class).toInstance(new Configuration()
                             .addAnnotatedClass(ReadOnlyTransactionalObject.class)
                             .setProperties(Initializer.loadProperties("spt-persistence.properties")));
                     }
@@ -72,9 +72,9 @@ public class ReadOnlyTransactionsTest {
 
         // because the session gets closed in UnitOfWork.TRANSACTION,
         // we do NOT reset the flushmode in the interceptor
-            Assert.assertTrue(session.getFlushMode() == FlushMode.MANUAL,
-                    "FlushMode has been reset with UnitOfWork.TRANSACTION and read-only transactions, " +
-                            "this means the session was not closed!");
+        Assert.assertTrue(session.getHibernateFlushMode() == FlushMode.MANUAL,
+                "FlushMode has been reset with UnitOfWork.TRANSACTION and read-only transactions, " +
+                        "this means the session was not closed!");
     }
 
     public static class ReadOnlyTransactionalObject {
@@ -83,7 +83,7 @@ public class ReadOnlyTransactionsTest {
         
         @Transactional(type = READ_ONLY)
         public Session runReadOnlyTxnAndReturnSession() {
-            Assert.assertTrue(session.getFlushMode() == FlushMode.MANUAL,
+            Assert.assertTrue(session.getHibernateFlushMode() == FlushMode.MANUAL,
                     "FlushMode is not set to MANUAL with a read only transaction.");
             return session;
         }

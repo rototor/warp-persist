@@ -24,7 +24,7 @@ import static com.google.inject.matcher.Matchers.*;
 import com.wideplay.codemonkey.web.startup.Initializer;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
-import org.hibernate.cfg.AnnotationConfiguration;
+import org.hibernate.cfg.Configuration;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.criterion.Expression;
 import static org.testng.Assert.fail;
@@ -52,7 +52,7 @@ public class AdvancedTransactionsConfigTest {
 
                     @Override
 					protected void configure() {
-                        bind(Configuration.class).toInstance(new AnnotationConfiguration()
+                        bind(Configuration.class).toInstance(new Configuration()
                             .addAnnotatedClass(HibernateAdvancedTxTestEntity.class)
                             .setProperties(Initializer.loadProperties("spt-persistence.properties")));
                     }

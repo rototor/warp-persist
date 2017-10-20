@@ -47,9 +47,6 @@ public interface HibernateTestAccessor {
     @Finder(query = "from HibernateTestEntity where id = :id")
     HibernateTestEntity fetch(@Named("id") Long id);
 
-    @Finder(query = "from HibernateTestEntity where id = ? and text = ?")
-    HibernateTestEntity fetchById(Long id, @MaxResults int i, String text);
-
     @Finder(query = "from HibernateTestEntity")
     List<HibernateTestEntity> listAll(@MaxResults int i);
 
@@ -59,6 +56,6 @@ public interface HibernateTestAccessor {
     @Finder(query = "from HibernateTestEntity where id IN(:list)")
     HibernateTestEntity fetchByIdList(@Named("list") List<Long> ids);
 
-    @Finder(query = "from HibernateTestEntity where id IN(?)")
-    HibernateTestEntity fetchByIdUnnamedList(List<Long> ids);
+    @Finder(query = "from HibernateTestEntity where id IN(:ids)")
+    HibernateTestEntity fetchByIdUnnamedList(@Named("ids") List<Long> ids);
 }

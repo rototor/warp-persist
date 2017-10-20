@@ -18,7 +18,7 @@ package com.wideplay.warp.persist.dao;
 
 import org.testng.annotations.*;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.cfg.AnnotationConfiguration;
+import org.hibernate.cfg.Configuration;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import com.google.inject.Injector;
@@ -58,7 +58,7 @@ public class HibernateDynamicFinderWithIsolationTest {
 
                     @Override
 					protected void configure() {
-                        bind(Configuration.class).toInstance(new AnnotationConfiguration()
+                        bind(Configuration.class).toInstance(new Configuration()
                             .addAnnotatedClass(HibernateTestEntityTxnal.class)
                             .setProperties(Initializer.loadProperties("spt-persistence.properties")));
                     }

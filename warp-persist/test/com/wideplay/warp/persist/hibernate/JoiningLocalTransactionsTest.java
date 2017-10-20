@@ -27,7 +27,7 @@ import com.wideplay.warp.persist.Transactional;
 import com.wideplay.warp.persist.UnitOfWork;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.cfg.AnnotationConfiguration;
+import org.hibernate.cfg.Configuration;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.criterion.Expression;
 import org.testng.annotations.AfterClass;
@@ -61,7 +61,7 @@ public class JoiningLocalTransactionsTest {
 
                     @Override
 					protected void configure() {
-                        bind(Configuration.class).toInstance(new AnnotationConfiguration()
+                        bind(Configuration.class).toInstance(new Configuration()
                             .addAnnotatedClass(HibernateTestEntity.class)
                             .setProperties(Initializer.loadProperties("spt-persistence.properties")));
                     }

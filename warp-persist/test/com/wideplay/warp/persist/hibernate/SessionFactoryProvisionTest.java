@@ -25,7 +25,6 @@ import com.wideplay.warp.persist.PersistenceService;
 import com.wideplay.warp.persist.UnitOfWork;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.cfg.AnnotationConfiguration;
 import org.hibernate.cfg.Configuration;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeTest;
@@ -55,7 +54,7 @@ public class SessionFactoryProvisionTest {
 
                     @Override
 					protected void configure() {
-                        bind(Configuration.class).toInstance(new AnnotationConfiguration()
+                        bind(Configuration.class).toInstance(new Configuration()
                             .addAnnotatedClass(HibernateTestEntity.class)
                             .setProperties(Initializer.loadProperties("spt-persistence.properties")));
                     }

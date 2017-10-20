@@ -21,7 +21,7 @@ import com.wideplay.codemonkey.web.startup.Initializer;
 import com.wideplay.warp.persist.dao.Finder;
 import com.wideplay.warp.persist.hibernate.HibernatePersistenceStrategy;
 import org.hibernate.Session;
-import org.hibernate.cfg.AnnotationConfiguration;
+import org.hibernate.cfg.Configuration;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -40,7 +40,7 @@ public class MultiModulesTest {
     public void setUp() {
         // Using dynamic accessors because it allows us to check if the interceptor got applied or not
         PersistenceStrategy hibernate = HibernatePersistenceStrategy.builder()
-                .configuration(new AnnotationConfiguration()
+                .configuration(new Configuration()
                         .addAnnotatedClass(MultiModulesEntity.class)
                         .addProperties(Initializer.loadProperties("spt-persistence-multimodule1.properties")))
                 .annotatedWith(MyUnit.class).build();
@@ -50,7 +50,7 @@ public class MultiModulesTest {
                 .buildModule();
 
         PersistenceStrategy hibernate2 = HibernatePersistenceStrategy.builder()
-                .configuration(new AnnotationConfiguration()
+                .configuration(new Configuration()
                         .addAnnotatedClass(MultiModulesEntity.class)
                         .addProperties(Initializer.loadProperties("spt-persistence-multimodule2.properties")))
                 .annotatedWith(MySecondUnit.class).build();

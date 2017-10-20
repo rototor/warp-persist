@@ -31,7 +31,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.cfg.AnnotationConfiguration;
+import org.hibernate.cfg.Configuration;
 import org.hibernate.SessionFactory;
 import org.hibernate.Session;
 
@@ -63,7 +63,7 @@ public class HibernateDynamicFinderAbstractClassTest {
 
                     @Override
 					protected void configure() {
-                        bind(Configuration.class).toInstance(new AnnotationConfiguration()
+                        bind(Configuration.class).toInstance(new Configuration()
                             .addAnnotatedClass(HibernateTestEntityTxnal.class)
                             .setProperties(Initializer.loadProperties("spt-persistence.properties")));
                     }

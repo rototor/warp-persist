@@ -23,9 +23,8 @@ import com.google.inject.matcher.Matchers;
 import com.wideplay.codemonkey.web.startup.Initializer;
 import com.wideplay.warp.persist.hibernate.HibernateTestEntity;
 import org.hibernate.SessionFactory;
-import org.hibernate.cfg.AnnotationConfiguration;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.context.ManagedSessionContext;
+import org.hibernate.context.internal.ManagedSessionContext;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -194,7 +193,7 @@ public class PersistenceFilterTest {
                 new AbstractModule() {
                     @Override
 					protected void configure() {
-                        bind(Configuration.class).toInstance(new AnnotationConfiguration()
+                        bind(Configuration.class).toInstance(new Configuration()
                                 .addAnnotatedClass(HibernateTestEntity.class)
                                 .setProperties(Initializer.loadProperties("spt-persistence.properties")));
                     }

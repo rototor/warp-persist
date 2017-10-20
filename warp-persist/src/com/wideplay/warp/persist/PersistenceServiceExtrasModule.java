@@ -29,6 +29,7 @@ import java.util.List;
  *
  * @author Robbie Vanbrabant
  */
+@Deprecated
 public final class PersistenceServiceExtrasModule extends AbstractModule {
     @Override
 	protected void configure() {

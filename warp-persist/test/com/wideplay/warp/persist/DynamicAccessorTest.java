@@ -8,7 +8,7 @@ import com.wideplay.warp.persist.dao.Finder;
 import com.wideplay.warp.persist.hibernate.HibernatePersistenceStrategy;
 import com.wideplay.warp.persist.hibernate.HibernateTestEntity;
 import org.hibernate.HibernateException;
-import org.hibernate.cfg.AnnotationConfiguration;
+import org.hibernate.cfg.Configuration;
 import org.hibernate.cfg.Configuration;
 import org.testng.annotations.Test;
 
@@ -44,7 +44,7 @@ public class DynamicAccessorTest {
                 new AbstractModule() {
                     @Override
 					protected void configure() {
-                        bind(Configuration.class).annotatedWith(MyUnit.class).toInstance(new AnnotationConfiguration()
+                        bind(Configuration.class).annotatedWith(MyUnit.class).toInstance(new Configuration()
                             .addAnnotatedClass(HibernateTestEntity.class)
                             .setProperties(Initializer.loadProperties("spt-persistence.properties")));
                     }
@@ -60,7 +60,7 @@ public class DynamicAccessorTest {
                 new AbstractModule() {
                     @Override
 					protected void configure() {
-                        bind(Configuration.class).annotatedWith(MyUnit.class).toInstance(new AnnotationConfiguration()
+                        bind(Configuration.class).annotatedWith(MyUnit.class).toInstance(new Configuration()
                             .addAnnotatedClass(HibernateTestEntity.class)
                             .setProperties(Initializer.loadProperties("spt-persistence.properties")));
                     }
@@ -76,7 +76,7 @@ public class DynamicAccessorTest {
                 new AbstractModule() {
                     @Override
 					protected void configure() {
-                        bind(Configuration.class).toInstance(new AnnotationConfiguration()
+                        bind(Configuration.class).toInstance(new Configuration()
                             .addAnnotatedClass(HibernateTestEntity.class)
                             .setProperties(Initializer.loadProperties("spt-persistence.properties")));
                     }
@@ -93,7 +93,7 @@ public class DynamicAccessorTest {
                 new AbstractModule() {
                     @Override
 					protected void configure() {
-                        bind(Configuration.class).annotatedWith(MyUnit.class).toInstance(new AnnotationConfiguration()
+                        bind(Configuration.class).annotatedWith(MyUnit.class).toInstance(new Configuration()
                             .addAnnotatedClass(HibernateTestEntity.class)
                             .setProperties(Initializer.loadProperties("spt-persistence.properties")));
                     }
@@ -109,7 +109,7 @@ public class DynamicAccessorTest {
                 new AbstractModule() {
                     @Override
 					protected void configure() {
-                        bind(Configuration.class).annotatedWith(MyUnit.class).toInstance(new AnnotationConfiguration()
+                        bind(Configuration.class).annotatedWith(MyUnit.class).toInstance(new Configuration()
                             .addAnnotatedClass(HibernateTestEntity.class)
                             .setProperties(Initializer.loadProperties("spt-persistence.properties")));
                     }
