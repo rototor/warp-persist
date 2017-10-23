@@ -62,8 +62,8 @@ class HibernateLocalTxnInterceptor implements MethodInterceptor {
 			//no transaction already started, so start one and enforce its semantics
 			Transaction txn = session.beginTransaction();
 			if (isReadOnly) {
-				session.setHibernateFlushMode(FlushMode.MANUAL);
 				savedFlushMode = session.getHibernateFlushMode();
+				session.setHibernateFlushMode(FlushMode.MANUAL);
 			}
 			Object result;
 
@@ -89,9 +89,9 @@ class HibernateLocalTxnInterceptor implements MethodInterceptor {
 			try {
 				// We explicit flush the session before commit. This seems not to happen always ...
 				// We only flush the session if is not read only
-				if (!isReadOnly) {
-					session.flush();
-				}
+				//if (!isReadOnly) {
+					//session.flush();
+				//}
 				txn.commit();
 			} catch (RuntimeException re) {
 				txn.rollback();
