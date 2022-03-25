@@ -124,12 +124,12 @@
 	</dependencies>
 	<distributionManagement>
 		<repository>
-			<id>repo-deploy</id>
-			<url>http://ems:emsems@10.50.3.5:8081/artifactory/ext-release-local</url>
+		  <id>art-cluster</id>
+		  <url>http://10.50.11.11:30016/artifactory/ext-local</url>
 		</repository>
 		<snapshotRepository>
-			<id>repo-deploy-snapshot</id>
-			<url>http://ems:emsems@10.50.3.5:8081/artifactory/ext-snapshot-local</url>
+		  <id>art-cluster</id>
+		  <url>http://10.50.11.11:30016/artifactory/ext-local</url>
 		</snapshotRepository>
 	</distributionManagement>
 
