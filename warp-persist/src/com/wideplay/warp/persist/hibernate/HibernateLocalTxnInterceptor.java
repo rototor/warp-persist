@@ -89,10 +89,12 @@ class HibernateLocalTxnInterceptor implements MethodInterceptor {
 			try {
 				// We explicit flush the session before commit. This seems not to happen always ...
 				// We only flush the session if is not read only
-				//if (!isReadOnly) {
-					//session.flush();
-				//}
-				txn.commit();
+
+				// We can not rollback the transaction, because other stuff will fail here very subtil...
+				// if (isReadOnly)
+				//	txn.rollback();
+				// else
+					txn.commit();
 			} catch (RuntimeException re) {
 				txn.rollback();
 				commitException = re;

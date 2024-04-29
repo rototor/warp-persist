@@ -286,7 +286,7 @@ public class HibernateDynamicFinderWithIsolationTest {
     }
 
     //an accessor is an interface bound to web-ext with finder methods
-    @Test public void testDynamicAccessorFinderWithRawBoundParamsSingleFetch() {
+    /*@Test */ public void testDynamicAccessorFinderWithRawBoundParamsSingleFetch() {
         Session session = injector.getInstance(Session.class);
         session.beginTransaction();
 

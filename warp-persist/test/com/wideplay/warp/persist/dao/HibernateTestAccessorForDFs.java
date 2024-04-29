@@ -51,7 +51,7 @@ public interface HibernateTestAccessorForDFs {
     HibernateTestEntityTxnal fetch(@Named("id") Long id);
 
 
-    @Finder(query = "from HibernateTestEntityTxnal where id = ? and text = ?")
+    @Finder(query = "from HibernateTestEntityTxnal where id = ?1 and text = ?2")
     HibernateTestEntityTxnal fetchById(Long id, @MaxResults int i, String text);
 
 

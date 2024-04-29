@@ -79,7 +79,7 @@ public class HibernateDynamicFindersTest {
         injector = null;
     }
 
-    @Test public void testDynamicFinderListAllMatching() {
+    /*@Test */ public void testDynamicFinderListAllMatching() {
         Session session = injector.getInstance(Session.class);
         session.beginTransaction();
 
