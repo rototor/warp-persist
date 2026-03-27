@@ -25,12 +25,12 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 import javax.annotation.concurrent.GuardedBy;
 import javax.annotation.concurrent.ThreadSafe;
-import javax.servlet.Filter;
-import javax.servlet.FilterChain;
-import javax.servlet.FilterConfig;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
+import jakarta.servlet.Filter;
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.FilterConfig;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.ServletRequest;
+import jakarta.servlet.ServletResponse;
 
 import com.google.inject.Singleton;
 import com.wideplay.warp.persist.internal.ExceptionalRunnable;
@@ -42,9 +42,9 @@ import com.wideplay.warp.persist.internal.Lifecycles;
  * Apply this filter to enable the HTTP Request unit of work and to have Warp Persist manage the lifecycle of
  * all the active (module installed) {@code PersistenceService} instances.
  * The filter automatically starts and stops all registered {@link PersistenceService} instances
- * upon {@link javax.servlet.Filter#init(javax.servlet.FilterConfig)} and
- * {@link javax.servlet.Filter#destroy()}. To disable the managing of PersistenceService instances,
- * override {@link javax.servlet.Filter#init(javax.servlet.FilterConfig)} and {@link javax.servlet.Filter#destroy()}.
+ * upon {@link jakarta.servlet.Filter#init(jakarta.servlet.FilterConfig)} and
+ * {@link jakarta.servlet.Filter#destroy()}. To disable the managing of PersistenceService instances,
+ * override {@link jakarta.servlet.Filter#init(jakarta.servlet.FilterConfig)} and {@link jakarta.servlet.Filter#destroy()}.
  * <p>
  * To be able to use {@link com.wideplay.warp.persist.UnitOfWork#REQUEST}, register this filter <b>once</b> in the
  * {@code web.xml} or using Guice's 2.0 {@code ServletModule}. It is important that you register this filter
@@ -61,9 +61,9 @@ import com.wideplay.warp.persist.internal.Lifecycles;
  * }</pre>
  * </p>
  * <p>
- * Important note: {@link javax.servlet.Filter#init(javax.servlet.FilterConfig)} will have no effect if Guice has
+ * Important note: {@link jakarta.servlet.Filter#init(jakarta.servlet.FilterConfig)} will have no effect if Guice has
  * not been started before it gets called. Usually this means Guice should be started in a
- * {@link javax.servlet.ServletContextListener}. If you can't for some reason, don't worry; all
+ * {@link jakarta.servlet.ServletContextListener}. If you can't for some reason, don't worry; all
  * {@link com.wideplay.warp.persist.PersistenceService} instances will automatically start when they first get used.
  * Just make sure you don't get any incoming request before Guice starts.
  * </p>
